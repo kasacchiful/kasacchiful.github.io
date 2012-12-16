@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Kasacchiful's Blog]]></title>
   <link href="http://kasacchiful.github.com/atom.xml" rel="self"/>
   <link href="http://kasacchiful.github.com/"/>
-  <updated>2012-12-16T23:55:05+09:00</updated>
+  <updated>2012-12-17T00:46:07+09:00</updated>
   <id>http://kasacchiful.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[kasacchiful]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[最初のOctopress]]></title>
+    <link href="http://kasacchiful.github.com/blog/2012/12/17/hello_octopress/"/>
+    <updated>2012-12-17T00:38:00+09:00</updated>
+    <id>http://kasacchiful.github.com/blog/2012/12/17/hello_octopress</id>
+    <content type="html"><![CDATA[<p>もうすぐ新しい年になるので何か新しい事でも始めようかと思ったところ、そういえば技術系のブログを書いた事が無かったので、せっかくなので少しずつ書いていこうと思います。</p>
+
+<p>なぜ、Octopressを使うことにしたのかは、後ほど。</p>
+]]></content>
+  </entry>
   
 </feed>
