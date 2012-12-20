@@ -4,7 +4,7 @@
   <title><![CDATA[Kasacchiful's Blog]]></title>
   <link href="http://kasacchiful.github.com/atom.xml" rel="self"/>
   <link href="http://kasacchiful.github.com/"/>
-  <updated>2012-12-19T04:24:20+09:00</updated>
+  <updated>2012-12-21T00:24:03+09:00</updated>
   <id>http://kasacchiful.github.com/</id>
   <author>
     <name><![CDATA[kasacchiful]]></name>
@@ -12,6 +12,102 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopressを使ってブログを書いてみた]]></title>
+    <link href="http://kasacchiful.github.com/blog/2012/12/20/new-blog-using-octopress/"/>
+    <updated>2012-12-20T22:54:00+09:00</updated>
+    <id>http://kasacchiful.github.com/blog/2012/12/20/new-blog-using-octopress</id>
+    <content type="html"><![CDATA[<p>前も書いたけど、新しい年を迎えるにあたって何か新しい事を始めたかったのです。
+そんなとき、Octopressで技術系ブログを書き始めることを思い立ちました。</p>
+
+<h2>なぜ技術系ブログを書くのか</h2>
+
+<p>自分は文章を書くのが苦手です。
+開発プロジェクトに関わる際にもっとも苦手な事が、ドキュメントを作成する事。</p>
+
+<p>自分は新潟のSIerで働くエンジニアです。
+最近は、プログラミングよりもドキュメント作成が主な仕事になってきました。
+でも、苦手なドキュメント作成は、何をどのようにまとめたらよいのか混乱する事が多く、時間がかかります。
+工数が非常にかかっている。</p>
+
+<p>仕事にかかる時間は人生の多くを占めるのだから、
+この現状を少しでも改善できたら、
+人生もっとハッピーになれるのではないか。</p>
+
+<p>またエンジニア故に、
+自分が携わった技術に関して文章にうまくまとめる事ができたら、
+このブログを見て悩みを解決できる人が増えて
+自分以外の人もハッピーになれるのではないか。</p>
+
+<p>文章が下手でうまく伝わらないかもしれないけど、
+少しずつ書き留めていきたいと思います。</p>
+
+<h2>なぜOctopressにしたのか</h2>
+
+<p>技術系ブログを書き始めるにあたり、
+はてなブログなどのブログサービスを使えばすぐ始められると思いましたが、
+それでは何か足りないと感じました。
+せっかくなので、新しい事をもっとしたいと。</p>
+
+<p>そんななか、最近はOctopressを使っているページをよく見かけるようになりました。
+Octopressを調べてみると、興味をそそられました。</p>
+
+<ul>
+<li>markdownで記述し、静的ページを作成する</li>
+<li>github pagesにgitを使って記事を公開する</li>
+<li>Octopress自身はrubyで書かれている</li>
+</ul>
+
+
+<p>markdownはほとんど使った事が無いのですが、調べてみるとシンプルに文書構造を定義できそうな印象を持ちました。
+文章を書く事が苦手な自分にとって、文書構造を考えやすくなるのはいいことではないかと考えました。</p>
+
+<p>githubについては、アカウントがあるのですがほとんど使って無く、
+gitも仕事で使うプロジェクトに関わっていないため、
+gitおよびgithubの使い方に慣れておくにはとてもいいと考えました。</p>
+
+<p>また、ruby好きの自分にとって、
+Octopressがrubyで書かれているのは、勉強ネタとしても良いネタではないかと考えました。
+いざとなったら、自分でいじれるし。</p>
+
+<p>そういうわけで、Octopressを使ってみる事にしました。</p>
+
+<h2>環境の構築</h2>
+
+<p>Octopressを使ったブログを構築しました。
+マシンは自分のMac。Rubyはrvmで1.9.3を構築。gemsetはoctopress用に作成しました。
+環境の構築については公式サイトを見てやったのですが、
+他にもいろいろと書かれていますので、割愛します。
+思ったよりも簡単です。</p>
+
+<ul>
+<li><a href="http://shogo82148.github.com/blog/2012/03/21/test/">GitHubにブログを設置してみたよ - Shogo&#8217;s Blog</a></li>
+<li><a href="http://www.sankitch.me/blog/2012/05/05/build-octopress-on-github-dropbox/">Octopress + Github Pages + Dropbox でブログを構築 - M-x sankitch-info</a></li>
+<li><a href="http://os0x.github.com/2012/04/01/new-blog/">Octopressとgithub Pagesを使ったブログ - 0xff.toBlog()</a></li>
+<li><a href="http://mattn.kaoriya.net/software/lang/ruby/20111017205717.htm">Big Sky :: githubとjekyllとoctopressで作る簡単でモダンなブログ</a></li>
+<li><a href="http://tokkono.cute.coocan.jp/blog/slow/index.php/programming/github-pages-almost-perfect-guide/">GitHub Pagesホスティングサービス（ほぼ）完全活用ガイド | ゆっくりと…</a></li>
+</ul>
+
+
+<p>このブログはgithub pages上にdeployしています。
+Octopressはこのdeployについてもコマンドで簡単にできます。
+プレビューも見れるので、意外と便利。
+ブログはHTML5で作成されるため、HTML5の勉強にもなりそうです。</p>
+
+<p>いろいろいじれそうで、その点についてもわくわくするのですが、
+いじることに夢中になりすぎて時間を取られすぎないようにしたいです。</p>
+
+<h2>まとめ</h2>
+
+<p>これからがスタートです。</p>
+
+<p>Octopressしかり、gitしかり、githubしかり、markdownしかり。</p>
+
+<p>これらのツールに携わりながら
+苦手な文章作成を少しずつ改善していきたいです。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[最初のOctopress]]></title>
