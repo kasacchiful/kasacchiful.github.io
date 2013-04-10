@@ -4,7 +4,7 @@
   <title><![CDATA[Kasacchiful's Blog]]></title>
   <link href="http://kasacchiful.github.com/atom.xml" rel="self"/>
   <link href="http://kasacchiful.github.com/"/>
-  <updated>2013-04-10T23:01:53+09:00</updated>
+  <updated>2013-04-10T23:17:41+09:00</updated>
   <id>http://kasacchiful.github.com/</id>
   <author>
     <name><![CDATA[kasacchiful]]></name>
@@ -26,6 +26,11 @@ Niigata.LLが開催されました。</p>
 <h2>私の発表</h2>
 
 <p>私は、PowerShellについてしゃべりました。</p>
+
+<!-- more -->
+
+
+
 
 <script async="true" class="speakerdeck-embed" data-id="c31daca075f50130119912313b10071a" src="http://kasacchiful.github.com//speakerdeck.com/assets/embed.js"> </script>
 
@@ -88,6 +93,9 @@ JaSST&#8217;13 Niigataが開催されました。</p>
 
 <p><a href="http://www.jasst.jp/symposium/jasst13niigata.html">JaSSTソフトウェアテストシンポジウム-JaSST&#8217;13 Niigata</a></p>
 
+<!-- more -->
+
+
 <p>今回で3回目の新潟開催ですが、
 私は今回から実行委員として開催運営に携わることになりました。</p>
 
@@ -135,6 +143,9 @@ JaSST&#8217;13 Niigataが開催されました。</p>
     <id>http://kasacchiful.github.com/blog/2012/12/20/new-blog-using-octopress</id>
     <content type="html"><![CDATA[<p>前も書いたけど、新しい年を迎えるにあたって何か新しい事を始めたかったのです。
 そんなとき、Octopressで技術系ブログを書き始めることを思い立ちました。</p>
+
+<!-- more -->
+
 
 <h2>なぜ技術系ブログを書くのか</h2>
 
