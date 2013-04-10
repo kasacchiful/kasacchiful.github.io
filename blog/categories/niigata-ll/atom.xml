@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Niigata.LL | Kasacchiful's Blog]]></title>
+  <link href="http://kasacchiful.github.com/blog/categories/niigata-ll/atom.xml" rel="self"/>
+  <link href="http://kasacchiful.github.com/"/>
+  <updated>2013-04-10T23:01:53+09:00</updated>
+  <id>http://kasacchiful.github.com/</id>
+  <author>
+    <name><![CDATA[kasacchiful]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Niigata.LLに参加しました]]></title>
+    <link href="http://kasacchiful.github.com/blog/2013/04/02/niigata-ll/"/>
+    <updated>2013-04-02T10:32:00+09:00</updated>
+    <id>http://kasacchiful.github.com/blog/2013/04/02/niigata-ll</id>
+    <content type="html"><![CDATA[<p>2013年3月23日（土）に長岡のまちなかキャンパスで、
+Niigata.LLが開催されました。</p>
+
+<p><a href="http://www.dictav.info/NiigataLL/">NiigataLL by dictav</a></p>
+
+<h2>私の発表</h2>
+
+<p>私は、PowerShellについてしゃべりました。</p>
+
+<p><script async="true" class="speakerdeck-embed" data-id="c31daca075f50130119912313b10071a" src="//speakerdeck.com/assets/embed.js"> </script></p>
+
+<p>本当は、Ruby 2.0 と Rails 4.0についてしゃべろうかと思いましたが、
+スライド作ってみるとイマイチぱっとしない。</p>
+
+<p>そこで、社内向けに密かに作っていたPowerShellのスライドを
+Niigata.LL向けにカスタマイズして、発表しました。</p>
+
+<p>ただ、スライド作り始めたのが発表の前日で、
+Niigata.LLが始まってもまだできずに、
+他の人の発表の合間に作り続けるはめになりました。</p>
+
+<p>体調も良くなかったので、
+発表も何しゃべったのかほとんど覚えていませんが、
+ほとんどMacの中でウケは良かったと思います。</p>
+
+<p>PowerShellも使い方によっては、LLっぽく振る舞える感じがいいですよね。</p>
+
+<h2>Niigata.LLの感想</h2>
+
+<p>体調不良もあり、あまり覚えていないのですが、簡単に。</p>
+
+<ul>
+<li>新潟にはJavaScriptのユーザが少ない</li>
+<li>新潟にはLispのユーザが少ない</li>
+<li></li>
+<li>新潟にはLightweight Languageのユーザが少ない</li>
+</ul>
+
+
+<p>みたいな謳い文句で始まったみたいですが、
+席も満席で技術者いっぱいいるじゃんという感じ、
+そして和気あいあいな雰囲気がとても良かったです。</p>
+
+<p>また、こういう勉強会はいろんな技術が集まってくるので、
+非常に参考になります。</p>
+
+<p>新潟も捨てたもんじゃないな。</p>
+]]></content>
+  </entry>
+  
+</feed>

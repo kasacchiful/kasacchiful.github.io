@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: JaSST | Kasacchiful's Blog]]></title>
+  <link href="http://kasacchiful.github.com/blog/categories/jasst/atom.xml" rel="self"/>
+  <link href="http://kasacchiful.github.com/"/>
+  <updated>2013-04-10T23:01:53+09:00</updated>
+  <id>http://kasacchiful.github.com/</id>
+  <author>
+    <name><![CDATA[kasacchiful]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[JaSST'13 Niigataが開催されました]]></title>
+    <link href="http://kasacchiful.github.com/blog/2013/03/30/jasst13niigata/"/>
+    <updated>2013-03-30T20:02:00+09:00</updated>
+    <id>http://kasacchiful.github.com/blog/2013/03/30/jasst13niigata</id>
+    <content type="html"><![CDATA[<p>最近体調が悪くて、なかなか文章書ける状態ではなく、
+新年迎えるにあたって始めたこのブログも、
+気づけばすでに3月まで何も書かないという、
+なんとも体たらくな感じですが、よろしくお願いします。</p>
+
+<p>体調見ながら、少しずつ書いていきます。</p>
+
+<h2>JaSST'13 Niigata が開催されました</h2>
+
+<p>2013年3月15日（金）に、にいがた産業創造機構で
+JaSST'13 Niigataが開催されました。</p>
+
+<p><a href="http://www.jasst.jp/symposium/jasst13niigata.html">JaSSTソフトウェアテストシンポジウム-JaSST'13 Niigata</a></p>
+
+<p>今回で3回目の新潟開催ですが、
+私は今回から実行委員として開催運営に携わることになりました。</p>
+
+<p>受付とかしていたので、講演全部聞いていた訳ではないので、
+講演内容は実行委員長のコラムをご覧ください。
+（ちょっと投げやりな感じですが、ご了承ください）</p>
+
+<p><a href="http://el.jibun.atmarkit.co.jp/obbligato/2013/03/jasst13-niigata-34c4.html">オブリガート ～感謝されるテストエンジニアになる～: ソフトウェアテストシンポジウム「JaSST'13 Niigata」開催レポート（その1）――テストを難しくさせているもの</a></p>
+
+<p>講演内容が丁寧に書かれているので、
+非常に読みやすいと思います。</p>
+
+<h2>JaSSTを開催して思った事</h2>
+
+<p>実は、1月のJaSST'13 Tokyoにも参加しました。
+新潟と開催規模が全然違うので単純に比較できませんが、
+東京でも新潟でもソフトウェアテストでかなりの人が集まるわけです。</p>
+
+<p>ソフトウェアテストで人が集まるということは、
+ソフトウェアテストで悩んでいる人がかなりいるのではないかと思います。</p>
+
+<p>私もソフトウェアテストで悩んでいる一人です。</p>
+
+<p>書籍を読んだり、勉強会参加したりするほど、
+ソフトウェアテストは開発工程の1フェーズにとどまらない、
+開発工程全体に深く関わっている存在であると認識させられます。</p>
+
+<p>そして、ソフトウェアの品質向上には無くてはならないものでもあります。</p>
+
+<p>今回のJaSST'13 Niigataでは、
+上流から始めるテスト開発というテーマで
+初めての実行委員として運営に携わりました。</p>
+
+<p>ただ、ソフトウェアテストは
+色々な事を想定しなければいけない分野だと思いますので、
+次回以降も皆様にとって価値のある時間になるように
+実行委員一同頑張っていこうと思います。</p>
+]]></content>
+  </entry>
+  
+</feed>
