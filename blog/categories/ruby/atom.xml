@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Kasacchiful's Blog]]></title>
   <link href="http://kasacchiful.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://kasacchiful.github.com/"/>
-  <updated>2013-07-16T23:19:02+09:00</updated>
+  <updated>2013-09-05T00:05:46+09:00</updated>
   <id>http://kasacchiful.github.com/</id>
   <author>
     <name><![CDATA[kasacchiful]]></name>
@@ -12,6 +12,218 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[クロッシング問題を解いてみた]]></title>
+    <link href="http://kasacchiful.github.com/blog/2013/09/03/crossing/"/>
+    <updated>2013-09-03T23:11:00+09:00</updated>
+    <id>http://kasacchiful.github.com/blog/2013/09/03/crossing</id>
+    <content type="html"><![CDATA[<p>CodeIQにあったクロッシング問題。</p>
+
+<p>この前のNiigata.rbの懇親会でも話題になったので、
+このためにCodeIQのアカウント作ってやってみたら、
+もう締めきりになっていたので、
+個人的にやってみました。</p>
+
+<p>元ネタは<a href="https://codeiq.jp/ace/yuki_hiroshi/q432">こちら</a>。</p>
+
+<!-- more -->
+
+
+<h2>実行環境</h2>
+
+<ul>
+<li>MacBook Air (Mid 2013)</li>
+<li>MacOS X 10.8.4</li>
+<li>Ruby 2.0.0-p195</li>
+</ul>
+
+
+<h2>考え方1</h2>
+
+<p>まずは、以下のように考えてみました。</p>
+
+<ol>
+<li>素子数分の要素を持つ配列aを作成する。
+
+<ul>
+<li>[1,2,3,&hellip;,n]</li>
+</ul>
+</li>
+<li>ファイルの素子番号順に、binary searchをして配列aのindexを得る。
+
+<ul>
+<li>indexは 0..n-1ですね。</li>
+</ul>
+</li>
+<li>配列aから要素番号に該当する要素を削除する</li>
+<li>各々得られたindexを加算すると、求める値が得られる。</li>
+</ol>
+
+
+<p>コードは以下。</p>
+
+<p>```ruby
+start_time = Time.now</p>
+
+<p>def bsearch(ary, key, left, right)
+  return nil if left > right
+  mid = (left + right) / 2
+  key &lt; ary[mid] ? (right = mid &ndash; 1) : (left = mid + 1)
+  key == ary[mid] ? mid : bsearch(ary, key, left, right)
+end</p>
+
+<p>fname = &ldquo;./crossing.txt&rdquo;</p>
+
+<p>File.open(fname, &ldquo;r&rdquo;) do |f|
+  j = f.read.count(&ldquo;\n&rdquo;)
+  f.rewind</p>
+
+<p>  tops = [*1..j]
+  cross = 0
+  f.each do |line|</p>
+
+<pre><code>n = line.chomp.to_i
+j -= 1
+i = bsearch(tops, n, 0, j)
+cross += i
+tops.delete_at(i)
+</code></pre>
+
+<p>  end</p>
+
+<p>  puts cross
+end</p>
+
+<p>puts Time.now &ndash; start_time
+```
+交差点数は24,689,222,839。<br/>
+実行速度は約9.9秒。</p>
+
+<p>プロファイリングをすると、やはり、binary search と delete_at で時間がかかっています。</p>
+
+<p>別のアルゴリズムを考える必要がありそうです。</p>
+
+<h2>考え方2</h2>
+
+<p>出力元と出力先の素子番号が同じように並んでいるのであれば、交差点はありません。
+しかし、そのうち2つが入れ替わっていると、交差点は1つ発生します。</p>
+
+<p>そこで、出力先の素子番号のファイルを読み込んで
+それがソート中に数値が入れ替わった分が交差点数になると考えました。</p>
+
+<p>今回はマージソートでやってみました。</p>
+
+<p>コードは以下。
+マージソートの部分はWikipediaからパクりました。(^^)</p>
+
+<p>```ruby
+start_time = Time.now
+@cross = 0</p>
+
+<p>def merge_sort lst
+  return msort lst.dup
+end</p>
+
+<p>def msort lst
+  return lst if (len = lst.size) &lt;= 1</p>
+
+<p>  lst2 = lst.pop(len >> 1)
+  return merge(merge_sort(lst), merge_sort(lst2))
+end</p>
+
+<p>def merge lst1, lst2
+  len1, len2 = lst1.size, lst2.size
+  result = Array.new(len1 + len2)
+  a, b = lst1.first, lst2.first
+  i, j, k = 0, 0, 0</p>
+
+<p>  loop do</p>
+
+<pre><code>if a &lt;= b
+  result[i] = a
+  i += 1; j += 1
+  break unless j &lt; len1
+  a = lst1[j]
+else
+  @cross += (len1 + k - i)
+  result[i] = b
+  i += 1; k += 1
+  break unless k &lt; len2
+  b = lst2[k]
+end
+</code></pre>
+
+<p>  end</p>
+
+<p>  while j &lt; len1 do</p>
+
+<pre><code>result[i] = lst1[j]
+i += 1; j += 1
+</code></pre>
+
+<p>  end
+  while k &lt; len2 do</p>
+
+<pre><code>result[i] = lst2[k]
+i += 1; k += 1
+</code></pre>
+
+<p>  end</p>
+
+<p>  return result
+end</p>
+
+<p>fname = &ldquo;./crossing.txt&rdquo;</p>
+
+<p>a = []
+File.open(fname, &ldquo;r&rdquo;) do |f|
+  f.each do |line|</p>
+
+<pre><code>a &lt;&lt; line.chomp.to_i
+</code></pre>
+
+<p>  end</p>
+
+<p>  merge_sort a
+  pp @cross
+end</p>
+
+<p>puts Time.now &ndash; start_time
+```
+交差点数は24,689,222,839。<br/>
+実行速度は約1.7秒。</p>
+
+<p>これで、速度要件は満たしました。
+でも、クロッシング社の要求は速ければ速いほどいいということなので、
+もっと速いアルゴリズムを考えた方がいいのでしょうけれど、
+とりあえずこれまでとします。</p>
+
+<h2>JRubyで実行してみる</h2>
+
+<p>考え方1をJRuby 1.7.4(1.9.3p392)で実行してみると、
+実行速度は約6.8秒。</p>
+
+<p>考え方2を同じようにJRuby 1.7.4で実行してみると、
+実行速度は約2.4秒。</p>
+
+<p>考え方1はJRubyが速いけど、考え方2はRubyが速いのは、なかなか興味深いですね。</p>
+
+<h2>まとめ</h2>
+
+<p>結局、解答は提出できなかったので、本当にあっているのかどうかはわかりません。
+また、Cなどruby以外の言語であれば、実行速度は変わってくると思います。</p>
+
+<p>最近プログラミングしてなかった自分としては、
+他の言語についてじっくり考える余裕がなかったのは残念です。
+でも、速度向上を得るためにアルゴリズムについて考えることは最近できてなかったので、
+とても参考になりました。</p>
+
+<p>別のアルゴリズムでさらに効率的にできるのであれば、学びたいと思います。</p>
+
+<p>アルゴリズムは奥が深い。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[NDS31に参加しました。]]></title>
