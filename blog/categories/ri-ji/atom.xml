@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 日記 | Kasacchiful's Blog]]></title>
+  <link href="http://kasacchiful.github.com/blog/categories/ri-ji/atom.xml" rel="self"/>
+  <link href="http://kasacchiful.github.com/"/>
+  <updated>2014-01-11T16:12:14+09:00</updated>
+  <id>http://kasacchiful.github.com/</id>
+  <author>
+    <name><![CDATA[kasacchiful]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[2014年に向けて]]></title>
+    <link href="http://kasacchiful.github.com/blog/2014/01/05/new_year/"/>
+    <updated>2014-01-05T22:47:00+09:00</updated>
+    <id>http://kasacchiful.github.com/blog/2014/01/05/new_year</id>
+    <content type="html"><![CDATA[<p>あけましておめでとうございます。</p>
+
+<p>昨年末から「風邪をひく」「左足小指が腫れて歩くと痛い」という症状があり、
+久々のお休みにも関わらず、有意義なお休みにならないのが残念です。</p>
+
+<p>個人的な今年の目標は、「健康第一」。
+昨年は、いろいろあってしばらくお休みしていた時期もありました。
+まだ身体が完治していない状況ですので、
+まずは完治して心身ともに健康であることが一番かなと。</p>
+
+<p>後は、増えすぎた体重を落とすことでしょうか。
+落とす方法等まだ考えがまとまっていないので、後日考えをまとめてみます。</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Scala | Kasacchiful's Blog]]></title>
+  <link href="http://kasacchiful.github.com/blog/categories/scala/atom.xml" rel="self"/>
+  <link href="http://kasacchiful.github.com/"/>
+  <updated>2014-01-11T16:12:14+09:00</updated>
+  <id>http://kasacchiful.github.com/</id>
+  <author>
+    <name><![CDATA[kasacchiful]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[NDS33に参加しました。]]></title>
+    <link href="http://kasacchiful.github.com/blog/2013/09/29/nds33/"/>
+    <updated>2013-09-29T22:36:00+09:00</updated>
+    <id>http://kasacchiful.github.com/blog/2013/09/29/nds33</id>
+    <content type="html"><![CDATA[<p>第33回NDS（長岡開発者勉強会）に参加しました。</p>
+
+<p><a href="http://nagaoka.techtalk.jp/no33">第33回勉強会(2013/09/28) Scala入学式 &ndash; 長岡 IT開発者 勉強会(NDS)</a></p>
+
+<p>今回のテーマは、「Scala入学式」。
+Scalaは、結構前にコップ本買ったけど手つかずだった言語。
+気になっていた存在でした。
+半日がっつり勉強です。</p>
+
+<p>ちなみに、前日27日には「<a href="http://connpass.com/event/3568/">Scala入学試験</a>」なるものも開催されていたらしい。</p>
+
+<!-- more -->
+
+
+<h2>体調がわるい</h2>
+
+<p>勉強会の前の2日間、仕事があまりにも忙しくて飯も食わずに作業していた関係で、
+眠いし腹減ってるしゲーリーだしで、実は結構体調は悪かったです。
+しかも腹減っているわりには食が進まず、お昼もおにぎり1個で十分だった。</p>
+
+<p>こんな体調で勉強会大丈夫なのか、結構不安でした。</p>
+
+<h2>所感</h2>
+
+<p>テキストは<a href="https://gist.github.com/Shinpeim/6740436">これ</a>。</p>
+
+<p>かなりがっつりScalaプログラミング。
+キータイプするスピードがいつもより遅い自分には
+コーディングについていくのがやっと…。</p>
+
+<p>内容は自分にとっては結構すんなりわかるものだったので、良かったです。
+Optionモナドについても、ついていけばなんかわかっているつもりになっている。
+このあたりは、時間があるときに改めて学習すると、モナドについてもっとよくわかるかも。
+ということで、後日学習します。</p>
+
+<p>最後の演習は、ScalaとTwitter APIで「NullPoGaBot」を作りました。
+「ぬるぽ」とつぶやくと、「ガッ」とつぶやいてくれるbotです。
+これも、すんなりコーディングができました。</p>
+
+<p>講師の猫型さんの教え方がうまいおかげで、
+短い時間でボリューム豊富な割に、わかりやすかったです。</p>
+
+<h2>LT</h2>
+
+<p>LTのまとめは、内容をほとんどメモしていなかったため省略。</p>
+
+<h2>懇親会</h2>
+
+<p>体調悪いくせに懇親会も参加して、非常に楽しくお話しさせていただきました。
+今回も関要のオードブルがうまい。
+ここ2日間、ろくに飯を食べていないせいか、
+腹が減っているにも関わらず、昼はそれほど食が進まなかったけど、
+肉のうまさに箸が進みました。</p>
+
+<p>最近お酒が弱くなってきたのか、ビール2本でへろへろになってしまった。
+帰りの新幹線で寝てしまった…。</p>
+]]></content>
+  </entry>
+  
+</feed>
