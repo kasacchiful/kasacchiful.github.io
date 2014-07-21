@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: プログラミング | Kasacchiful's Blog]]></title>
+  <link href="http://kasacchiful.github.com/blog/categories/puroguramingu/atom.xml" rel="self"/>
+  <link href="http://kasacchiful.github.com/"/>
+  <updated>2014-07-21T16:46:05+09:00</updated>
+  <id>http://kasacchiful.github.com/</id>
+  <author>
+    <name><![CDATA[kasacchiful]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[NDS meetup in Niigataに参加しました。]]></title>
+    <link href="http://kasacchiful.github.com/blog/2014/07/13/ndsmeetup1/"/>
+    <updated>2014-07-13T22:45:00+09:00</updated>
+    <id>http://kasacchiful.github.com/blog/2014/07/13/ndsmeetup1</id>
+    <content type="html"><![CDATA[<p>第1回NDS in Niigataに参加しました。</p>
+
+<p><a href="http://nagaoka.techtalk.jp/nino1">第1回 新潟出張版(2013/07/13) &ndash; 長岡 IT開発者 勉強会(NDS)</a>
+<a href="http://connpass.com/event/7331/">NDS in Niigata #1 &ndash; connpass</a>
+<a href="https://github.com/NagaokaDevelopersStudy/Studies/blob/master/NDSMeetUp%231.md">Studies/NDSMeetUp#1.md at master · NagaokaDevelopersStudy/Studies · GitHub</a></p>
+
+<p>NDSは普段新潟県長岡市で開催されるんですけど、
+今回は新潟出張版として、第1回が新潟市で開催されました。
+今回のテーマは、自由ということでいろんな内容がありました。
+自分も発表しています。</p>
+
+<p>今回の初開催でいろいろ準備なされた主催者の@npoiさんと@dictavさんに感謝です。
+おつかれさまでした。</p>
+
+<!-- more -->
+
+
+<h2>簡単なDevOps入門 (@npoi)</h2>
+
+<p>今回の主催者の一人、@npoiさんの発表。</p>
+
+<p>DevOpsをとりまく環境についての概要といったところか。
+Infratasterとか試してみたいものがいろいろあって、興味がわいてくる。</p>
+
+<h2>主婦とChef (@sambaiz)</h2>
+
+<p>資料は<a href="http://www.slideshare.net/sakataiki/nds-chef">こちら</a></p>
+
+<p>Chefについての、お話。</p>
+
+<p>冒頭から「主婦とChef」の物語に引き込まれそうになった。
+なかなか面白かったです。</p>
+
+<h2>コマンドラインツール今昔 (@hayajo)</h2>
+
+<p>資料は<a href="https://gist.github.com/hayajo/4a07fa6f33630b743412">こちら</a></p>
+
+<p>新しくなったコマンドラインツールのお話。
+ifconfigとかよく使うオジサンですけど、今や時代遅れ。
+今どきのヤングになめられないように、ナウなツールを使わないとね。</p>
+
+<p>CentOS7はこれから触って試す人なので、
+いろいろ試してみます。</p>
+
+<h2>カラダ改造計画（序章） (@kasacchiful)</h2>
+
+<p>資料は<a href="https://speakerdeck.com/kasacchiful/nds-meetup-in-niigata-number-1">こちら</a></p>
+
+<p>私の発表。技術的な内容は全然ない発表ですみません。
+現在実施中の、カラダ改造計画の最初のイテレーション終了時期と
+NDS開催時期がちょうど合わさったので、
+LTでも良かったのですが、しゃべってしまいました。</p>
+
+<p>内容としては、大したこといってませんが、</p>
+
+<ul>
+<li>カラダ改造計画とシステム開発計画は一緒</li>
+<li>NDS等のいろんな勉強会の内容を自分なりに取り入れて、実践してみよう</li>
+<li>何か面白いことがあったら、NDSで発表してみよう</li>
+</ul>
+
+
+<p>あたりをつかんでくれるとありがたいです。</p>
+
+<h2>脆弱性の報告制度についてあれこれ (@ooooooo_q)</h2>
+
+<p>脆弱性の報告についてのお話。</p>
+
+<p>脆弱性を知ることや攻撃方法を知ることは、
+それに伴って防御方法も知ることに繋がるので、
+気に掛ける必要がある部分だと思う。
+焼肉おごるとか、少しほっこりしていいな。</p>
+
+<p>「脆弱性大好き」っておいwですが。</p>
+
+<h2>安全な"○○でログイン"の作り方 (@gonchan93)</h2>
+
+<p>資料は<a href="http://www.slideshare.net/ritou/secure-social-loginatndsniigata1-36922216">こちら</a></p>
+
+<p>CPAN Autherの@gonchan93さんの発表。
+OAuthやOpenIDに関するログインのセキュリティまわりのお話。
+気を付けないと脆弱性突かれちゃうから、意識しないと難しいね。
+参考になります。</p>
+
+<p>ちなみに、YAPC2014でも、しゃべるそうです。</p>
+
+<h2>Swiftに関する何か (@dictav)</h2>
+
+<p>資料は<a href="https://speakerdeck.com/dictav/swiftwoshao-sidake">こちら</a></p>
+
+<p>今回の主催者の一人、@dictavさんの発表。
+最近話題のSwift言語の概要についての話。</p>
+
+<p>iOSプログラマなら、少しは触ってみるのはアリかな？
+自分はそれほどiOSプログラミングしたことないけど、いい感じで記述できそうな雰囲気がある。
+Objective-Cからの移行とか、自分は気にする必要がないので、
+今度iOSプログラミングする必要に迫られた場合は、Swiftで書くかも。</p>
+
+<h2>iBeacon (@circled9)</h2>
+
+<p>ここからLT枠。</p>
+
+<p>資料は<a href="http://www.slideshare.net/circled9/ibeacon-36954299">こちら</a></p>
+
+<p>iBeacon試してみましたという話。</p>
+
+<p>iBeacon側でセキュリティを担保してはいけないとか、
+この辺りは、実際に構築する際に気を付けないといけないことだね。</p>
+
+<h2>私の自炊スタイル (@bnosuke)</h2>
+
+<p>@bnosukeさんが実践している、自炊のお話。</p>
+
+<p>いつもながら、いい声とわかりやすい説明、参考になります。</p>
+
+<h2>懇親会</h2>
+
+<p>いつもより早めの17時くらいから、新潟駅前の居酒屋で懇親会。</p>
+
+<p>私の発表は、@mazhulinさんに気に入ってもらって、
+結構お話させていただきました。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[NDS36に参加しました。]]></title>
+    <link href="http://kasacchiful.github.com/blog/2014/03/15/nds36/"/>
+    <updated>2014-03-15T12:45:00+09:00</updated>
+    <id>http://kasacchiful.github.com/blog/2014/03/15/nds36</id>
+    <content type="html"><![CDATA[<p>第36回NDS（長岡開発者勉強会）に参加しました。</p>
+
+<p><a href="http://nagaoka.techtalk.jp/no36">第36回勉強会(2013/03/15) &ndash; 長岡 IT開発者 勉強会(NDS)</a></p>
+
+<p>今回のテーマは、「Go言語といろいろな言語たち」。
+ボリュームが多すぎて、まとめきれません。すみません。
+勉強会も終了時間ぎりぎりで終了となりました。</p>
+
+<!-- more -->
+
+
+<h2>メインセッション</h2>
+
+<h3>Go言語入門 (@hayajo)</h3>
+
+<p>資料は<a href="https://gist.github.com/hayajo/9559874">Gistにあります</a>。</p>
+
+<p><a href="http://play.golang.org">Go Playground</a>でブラウザで動作検証可能との事。
+発表中にも、ここに書かれたソースコードの説明等をしていただき、分かりやすかったです。</p>
+
+<p>個人的には、"C言語を使いやすくした"印象を持ちました。
+まずは、<a href="http://play.golang.org">Go Playground</a>で、いろいろいじってみようかな。</p>
+
+<h2>サブセッション</h2>
+
+<p>一応、但し書きとして、</p>
+
+<blockquote><p>1言語につき何人話してOKです！
+レガシーでも最新でも、初級から上級まで「言語」をテーマに含めてくれればなんでもOKです。
+（ただなにもその知識がない人向けにも、さわりだけでも話してもらえると助かります）</p></blockquote>
+
+<p>となっておりました。私も発表しております。</p>
+
+<h3>Java7 や Java8 が僕らの目に優しくなってきている (@Nkzn)</h3>
+
+<p>資料は<a href="http://www.slideshare.net/Nkzn/nds36-java7java8">こちら</a></p>
+
+<p>Java7 とか Java8 とか、以前と比べて記述量が少なくなって、
+確かに読みやすくなっている印象。</p>
+
+<h3>Objective-C (@dictav)</h3>
+
+<p>資料は<a href="https://speakerdeck.com/dictav/nds36-objective-c">こちら</a></p>
+
+<p>Objective-Cは、最近ほとんど触らないけど、
+今後使いそうな予感がするので、後で勉強しようっと。</p>
+
+<h3>ちょこっとPython (@civic)</h3>
+
+<p>資料は<a href="http://www.slideshare.net/fbcivic/36python">こちら</a></p>
+
+<p>Pythonのドキュメントすごいな。</p>
+
+<h3>プログラミングTeX (@neruko3114)</h3>
+
+<p>資料は<a href="http://www.slideshare.net/hidetsugutamura/tex-32340082">こちら</a></p>
+
+<p>こんなTeX見たことないよ～。
+昔、論文やプレゼンで使ったことあるけど、
+剰余演算に解説が必要な、ある意味「きもちわるい」プログラミングは新鮮でした。
+こんな使い方もあったんだね。</p>
+
+<p>ちなみに、発表者の資料もTeXで作成との事。</p>
+
+<h3>Java8 Date and Time API (@gonchan93)</h3>
+
+<p>Java8 から使える Date API と Time API についての説明。</p>
+
+<p>がっつりJavaプログラミングしたのは、もう10年以上前（確かJava 1.2だったような気がする）だから、
+「昔はどうだったっけ」と思い出しながら、そんなに苦労してたんだと改めて思った。</p>
+
+<p>ここで少し休憩を挟んで、次へ。</p>
+
+<h3>サポートベクターマシン入門 〜金貨の真贋を見分けよう〜 (@salinger001101)</h3>
+
+<p>資料は<a href="https://github.com/Salinger/svm_gold">こちら</a></p>
+
+<p>もうちょっと勉強しないと、理解するのが難しいな。
+面白そうなのはわかる。
+Rも使ってみたいし、統計学勉強しようかな。</p>
+
+<h3>Kotlin 可愛いよ Kotlin (@Nkzn)</h3>
+
+<p>資料は<a href="http://www.slideshare.net/Nkzn/nds36-kotlin-cute">こちら</a></p>
+
+<p>ほぼ「Scala」らしい。新しい言語。
+フィンランド語で「やかん」の意味。</p>
+
+<p>Javaより書きやすいかも。
+JVM上で動く言語が結構増えてきているから、</p>
+
+<h3>はじめてのRuby (@dictav)</h3>
+
+<p>資料は<a href="https://speakerdeck.com/dictav/ruby">こちら</a></p>
+
+<p>Rubyについて、分かりやすく説明していただきました。
+初級者に対して教える際に、参考にしていこうと思います。</p>
+
+<h3>Ruby の Curry を少し食べてみた (@kasacchiful)</h3>
+
+<p>資料は<a href="https://speakerdeck.com/kasacchiful/nds-36-rubycurry">こちら</a></p>
+
+<p>私の発表。Rubyでカリー化をしてみた話です。
+Rubyというよりは、カリー化の話ですね。</p>
+
+<p>カレーをおいしくいただくためには、まずは
+カレー自体をおいしく作る必要があるので、
+カリー化もおいしくいただくためには、
+カリー化するための場がうまく構成されてないと、
+おいしくいただけないよなぁという気がしております。</p>
+
+<h3>計量マークアップ言語 (@NPoi)</h3>
+
+<p>markdownとかのお話。</p>
+
+<p>markdownとか、HAMLとかいろいろ使っているけど、
+まだまだ知らない言語があるみたいで、
+参考になります。</p>
+
+<h2>LT</h2>
+
+<p>もうすでに、時間がおしている…。</p>
+
+<h3>コミュニケーションツール (@upinetree)</h3>
+
+<p>資料は<a href="https://speakerdeck.com/upinetree/hubot-plus-idobatadetimufalsekomiyunikesiyonwojia-su-saseru">こちら</a></p>
+
+<p>「Hubot」と「idobata」を使って、
+社内コミュニケーションを促進させるツールを使ってみたというお話。
+ちなみに、「Hubot」は「ヒューボルト」と読むらしい。</p>
+
+<p>チームみんなでキャラ育てて、愛着をもつっていう発想いいな。
+面白そう。そんな環境で仕事してみたい。
+@upinetreeさんもイキイキしてて、良かった。</p>
+
+<h3>Redmine (@bnosuke)</h3>
+
+<p>タスク管理にRedmine使ってみたというお話。
+自分も、仕事でもプライベートでも使っております。</p>
+
+<h3>2年前に作ったものを今更ながら公開します (@kasacchiful)</h3>
+
+<p>時間がもう1分くらいしかなかったので、実演など余計な説明は一切なし。
+速攻でしゃべりました。</p>
+
+<p>発表の際に説明したアプリについては、別のページで解説する予定。</p>
+
+<h2>懇親会</h2>
+
+<p>今回はビアバッシュではなく、長岡市内の居酒屋で飲んで食べて騒ぎました。</p>
+]]></content>
+  </entry>
+  
+</feed>

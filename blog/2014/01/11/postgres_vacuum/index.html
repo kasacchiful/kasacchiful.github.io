@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>PostgreSQL Vacuum について - Kasacchiful's Blog</title>
+  <meta name="author" content="kasacchiful">
+
+  
+  <meta name="description" content="とあるシステムの障害に巻き込まれてしまって、
+いろいろ対応したので、メモします。 簡単にいうと、PostgreSQLのデータ空き容量の確保についてのメモです。 今回の環境 OS: CentOS 5.5
+DB: PostgreSQL 8.1.23 PostgreSQLのオブジェクトファイルの場所 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kasacchiful.github.com/blog/2014/01/11/postgres_vacuum/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Kasacchiful's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37134436-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kasacchiful's Blog</a></h1>
+  
+    <h2>プログラミングとか少しずつメモ書き</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kasacchiful.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">PostgreSQL Vacuum について</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-11T21:22:00+09:00" pubdate data-updated="true">Jan 11<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>とあるシステムの障害に巻き込まれてしまって、
+いろいろ対応したので、メモします。</p>
+
+<p>簡単にいうと、PostgreSQLのデータ空き容量の確保についてのメモです。</p>
+
+<!-- more -->
+
+
+<h2>今回の環境</h2>
+
+<ul>
+<li>OS: CentOS 5.5</li>
+<li>DB: PostgreSQL 8.1.23</li>
+</ul>
+
+
+<h2>PostgreSQLのオブジェクトファイルの場所</h2>
+
+<p>デフォルトでは、 /var/lib/pgsql/data/base 配下にあるようです。
+PostgreSQLのディスク使用量は、以下のコマンドで取得しました。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># cd /var/lib/pgsql/
+</span><span class='line'># du -h --max-depth=1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>実際のオブジェクトファイル名は、オブジェクトID（数字）のため、
+ファイル名とテーブル名等の対応がわからないと、
+どのテーブルがどれだけディスクを消費しているのかわかりません。</p>
+
+<h2>オブジェクトファイルサイズの確認</h2>
+
+<p>以下のpsqlコマンドから、SQLを使ってオブジェクトファイルのサイズを取得しました。
+$DBUSER, $DBNAME, $FILENAME は適宜置き換えてください。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>psql -U $DBUSER $DBNAME -c 'SHOW block_size;'
+</span><span class='line'>psql -U $DBUSER $DBNAME -c 'SELECT relname, relfilenode, ROUND(relpages*8/1024.0,2) AS MB FROM pg_class WHERE relpages &gt; 1 ORDER BY relpages DESC;' &gt;&gt; $FILENAME</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>SHOW block_size</code> でまずは、ブロックサイズの確認です。
+デフォルトは8キロバイト(8192)です。</p>
+
+<p>pg_class カタログには、テーブルの他にもインデックスやビューなどを目録にしているそうです。
+relnameがテーブル等の名前、relfilenodeがディスク上のファイル名、
+&ldquo;relpages * ブロックサイズ&#8221;がディスク上のサイズとなります。
+MB での表記にして、おおよその容量を取得しています。
+（※ <code>8192/(1024*1024) = 8/1024</code> となります。）
+ちなみに、relpages自体は、プランナで使用される単なる推測値のようです。</p>
+
+<h2>vacuum と reindex</h2>
+
+<p>今回は、容量のほとんどをpostgresqlが使っていたため、
+以下のことをして、対処しました。</p>
+
+<ol>
+<li>巨大なindexを一旦dropして空き容量確保。</li>
+<li>不要なデータの削除。</li>
+<li>テーブルに対して、vacuum fullの実行。</li>
+<li>vacuumするとindexが肥大化するので、reindexを実行してindexの再構築。</li>
+<li>dropしたindexを再作成。</li>
+</ol>
+
+
+<p>最初に巨大なindexをdropして、空き容量を確保しました。
+容量の大きい順で10個drop。主キーのindexはdrop対象から除いています。
+空き容量を確保したことでサーバが応答し始めました。まずは、応急処置としての対応となります。</p>
+
+<p>応急処置だけでは、応答し始めたとしても応答自体の速度はよくありません。
+index削除しただけですから。
+そこで、不要なデータを削除して、vacuum fullを試みました。</p>
+
+<p>postgresql 8.1だったので、vacuum fullは、かなりの時間がかかります。
+本当はclusterを使いたかったのですが、容量の関係等もあって断念。
+テーブル毎に時間をかけながらvacuum fullです。
+vacuum fullすると、indexのサイズが大きくなるので、
+併せてreindexも実行します。</p>
+
+<p>全てのテーブルとインデックスに対処したら、
+最初にdropしたindexを再作成して完了です。</p>
+
+<h2>定期的なvacuum</h2>
+
+<p>さて、このままだと、月日が経てばまた同様の症状が発生することが目に見えていました。</p>
+
+<ul>
+<li>不要なデータがたまり続けてしまうかも？</li>
+<li>定期的なvacuumが機能していない？</li>
+</ul>
+
+
+<p>こんなことは、構築時に担当者なりが事前にチェックするものですが、
+どこかの時期もしくはどこかのタイミングで止まってしまったのかもしれません。</p>
+
+<p>vacuum fullを毎日実行するとかは非現実的ですので、
+まずは、vacuumがうまく機能させるためにFSMの適正化や実行タイミングを調査して設定。
+そして、週末の負荷があまりない時間帯にclusterを定期実行するように設定しました。</p>
+
+<h2>vacuum fullの補足</h2>
+
+<p>vacuum fullは9.0から方式が変更になっている。
+詳細は<a href="http://wiki.postgresql.org/wiki/VACUUM_FULL/ja">こちら</a>をご確認いただきたい。</p>
+
+<p>9.0からはCLUSTERに似た実装になっているため、
+9.0以降のvaccum fullは実行速度が速くなったかわりに、十分な空き容量が必要になります。
+つまり、容量不足の場合は、事前にindexの削除等で十分な空き容量を空ける必要があります。</p>
+
+<h2>参考</h2>
+
+<p><a href="http://www.postgresql.jp/document/8.1/html/catalog-pg-class.html">pg_class</a><br/>
+<a href="http://wiki.postgresql.org/wiki/VACUUM_FULL/ja">VACUUM FULL/ja &ndash; PostgreSQL wiki</a><br/>
+<a href="http://chulip.org/entry/2013/04/23/165535">PostgreSQLのvacuumとvacuum fullの違い &ndash; chulip.org</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">kasacchiful</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-11T21:22:00+09:00" pubdate data-updated="true">Jan 11<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/db/'>DB</a>, <a class='category' href='/blog/categories/postgresql/'>PostgreSQL</a>, <a class='category' href='/blog/categories/ri-ji/'>日記</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kasacchiful.github.com/blog/2014/01/11/postgres_vacuum/" data-via="" data-counturl="http://kasacchiful.github.com/blog/2014/01/11/postgres_vacuum/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/01/05/new_year/" title="Previous Post: 2014年に向けて">&laquo; 2014年に向けて</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/01/18/nds35/" title="Next Post: NDS35に参加しました。">NDS35に参加しました。 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <div><img src="http://www.gravatar.com/avatar/82d6167c4d14393c2e20b37a74b363c5"></div>
+  <p>新潟でWeb、業務アプリ、インフラ、etc. とにかくなんでもやるエンジニア。</p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/13/ndsmeetup1/">NDS meetup in Niigataに参加しました。</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/18/chrome_favicon/">ChromeでURLルートディレクトリにfavicon.icoが無いとセッション切れする</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/15/nds36/">NDS36に参加しました。</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/18/nds35/">NDS35に参加しました。</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/11/postgres_vacuum/">PostgreSQL Vacuum について</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - kasacchiful -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kasacchifulsblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kasacchiful.github.com/blog/2014/01/11/postgres_vacuum/';
+        var disqus_url = 'http://kasacchiful.github.com/blog/2014/01/11/postgres_vacuum/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

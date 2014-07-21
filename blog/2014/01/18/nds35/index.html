@@ -1,0 +1,677 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>NDS35に参加しました。 - Kasacchiful's Blog</title>
+  <meta name="author" content="kasacchiful">
+
+  
+  <meta name="description" content="第35回NDS（長岡開発者勉強会）に参加しました。 第35回勉強会(2013/01/18) &amp; 新潟開発者新年会(NDS) &ndash; 長岡 IT開発者 勉強会(NDS) 今回のテーマは、「設計（≒デザイン）の話をしよう」。
+ゲストスピーカー3本とLTの構成になっております。 所感（ &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kasacchiful.github.com/blog/2014/01/18/nds35/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Kasacchiful's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37134436-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kasacchiful's Blog</a></h1>
+  
+    <h2>プログラミングとか少しずつメモ書き</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kasacchiful.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">NDS35に参加しました。</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-18T12:45:00+09:00" pubdate data-updated="true">Jan 18<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>第35回NDS（長岡開発者勉強会）に参加しました。</p>
+
+<p><a href="http://nagaoka.techtalk.jp/no35">第35回勉強会(2013/01/18) &amp; 新潟開発者新年会(NDS) &ndash; 長岡 IT開発者 勉強会(NDS)</a></p>
+
+<p>今回のテーマは、「設計（≒デザイン）の話をしよう」。
+ゲストスピーカー3本とLTの構成になっております。</p>
+
+<!-- more -->
+
+
+<h2>所感（というかメモ）</h2>
+
+<p>所感を書こうと思ったけど、うまくまとめきれないので、
+備忘録的なメモ書きが中心です。</p>
+
+<h3>設計（≒デザイン）の話をしよう (@masaru_b_cl)</h3>
+
+<!-- 高野将 さま -->
+
+
+<p>まずは、高野さん (@masaru_b_cl) の発表から。
+スライドは<a href="http://www.slideshare.net/masaru_b_cl/nds35">こちら</a>。
+<a href="http://takanosho.wordpress.com/2014/01/21/nds35/">ブログ</a>にも解説がありました。</p>
+
+<p>高野さんの経験から設計（≒デザイン）について「当たり前」の話をしゃべるとのこと。</p>
+
+<p>設計（≒デザイン）とは「ソリューション」である
+ソリューション（問題解決）
+「何を」「どのように」「どうやって」
+「どのように」は「どのようにするために」といった目的に近い感じかな。</p>
+
+<h4>設計の進め方</h4>
+
+<ol>
+<li>目的の明確化</li>
+<li>ゴールの設定</li>
+<li>対応手段の決定</li>
+</ol>
+
+
+<p>目的の明確化については、「何が問題か」という、
+問題解決の前に問題発見を見極める必要があるということ。</p>
+
+<p><a href="http://www.amazon.co.jp/dp/4320023684">ライト、ついてますか</a>あたりを
+もう一度読み直してみよう。
+このあたりが「何が問題か」のアプローチのヒントになるはず。
+そして、原因や前提条件等も明確化する必要がある。</p>
+
+<p>問題を明確化した後はゴールの設定。そして、対応手順の決定。</p>
+
+<p>このあたりを短いスパンで回していくのが良さそう。
+発表でも「小さく繰り返すことで洗練される」とあったので、
+KPT、PDCA等でふりかえりしながらやっていく。</p>
+
+<h4>設計の重要ポイント</h4>
+
+<ol>
+<li>一貫性</li>
+<li>トレードオフ</li>
+<li>アフォーダンス</li>
+<li>スキルである</li>
+</ol>
+
+
+<p>「設計はスキルだ」は、結構重要かな。
+また、アフォーダンスについては、
+この世の原理、原則みたいなものに反しないようにすることかな？
+これに反することが特長となりうる利点なのか、やっぱり欠点なのかは、肝なのかもしれません。</p>
+
+<p>一貫性については、<a href="http://japanese.joelonsoftware.com/">Joel on Software</a>第五章をもう一度読み直してみよう。</p>
+
+<!-- [Joel on Software](http://www.amazon.co.jp/dp/4274066304) -->
+
+
+<h4>設計する上での課題</h4>
+
+<ol>
+<li>どこから設計する？</li>
+<li>どこまで設計する？</li>
+<li>ゴールの設定はどうやる？</li>
+<li>意識の外の問題はどうする？</li>
+<li>完全には防げないよね？</li>
+</ol>
+
+
+<p>この辺りは「設計はスキルである」ということから、
+繰り返しながら少しずつ身に付ける必要がありそう。
+今回の発表内で挙がった内容や、各種書籍で挙げられているパターンやツールを使いながら、
+時間がかかってでもやらなければならないと感じました。</p>
+
+<p>あまりにもおかしな設計にならないためにも、
+短いスパンでふりかえりが必要なのかな。</p>
+
+<h4>以下、メモ</h4>
+
+<ul>
+<li>設計の一貫性とは？
+
+<ul>
+<li>一貫性から標準化が生まれる</li>
+<li>『標準化を守ってるから一貫性があるのではなく、一貫性を保つための指針が標準化なんだよ！』</li>
+<li>「一貫性」「バランス」って便利な言葉だ</li>
+</ul>
+</li>
+<li>「守破離」
+
+<ul>
+<li>物事の本質を理解していなければ、「守破離」はできない。</li>
+<li>においとかも「なぜにおうのか」を言語化できなければ、</li>
+</ul>
+</li>
+<li>yagn
+
+<ul>
+<li>守るとどこまでやればいいのかわからなくなる</li>
+<li>ゴールの線引きが難しい
+
+<ul>
+<li>問題を改めて考えてみるのがよいかも</li>
+<li>優先度をつけてみる</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>最後の質疑応答で「魂」の話になったりして、面白かった。</p>
+
+<h3>ソフトウェア開発のInput→Architecture→Structure</h3>
+
+<!-- 尾上雅則 さま -->
+
+
+<p>つぎに、尾上さん (@ugaya40) の発表。
+MVVMの人ですね。</p>
+
+<!--
+http://ugaya40.net
+-->
+
+
+<p>パターンなんだけど、パターンにはまらないなどのお話</p>
+
+<h4>以下、メモ</h4>
+
+<p>以下、発表で心に残ったものをメモ。</p>
+
+<ul>
+<li>ソフトウェア開発の理想
+
+<ul>
+<li>Input &ndash;> Structure</li>
+</ul>
+</li>
+<li>ソフトウェア開発の現実
+
+<ul>
+<li>Input &ndash;> 複雑さに対する各種対処（Architecture）-> Structure</li>
+</ul>
+</li>
+</ul>
+
+
+<p>「Architecture が Structure を定義する！」ってなるほどと思った。</p>
+
+<ul>
+<li>Architectureとは、
+  すべての複雑さに対する対処のこと。工学的には「関心事の分離」。</li>
+<li>アプリケーションはそもそもドメイン（問題領域）に対するソリューションである。</li>
+<li>Architecture Pattern
+
+<ul>
+<li>アーキテクチャ記述の一種
+
+<ul>
+<li>GoFのあれとかはStructure Pattern</li>
+</ul>
+</li>
+<li>GUI Architecture Pattern など</li>
+</ul>
+</li>
+<li>例：MVC
+
+<ul>
+<li>MVC系
+
+<ul>
+<li>MVC系の何がViewpointで何がViewなのか</li>
+<li>Viewpoint: Presentation Domain Separation
+
+<ul>
+<li>プレゼン部分とそれ以外の部分にわけるだけの視点</li>
+</ul>
+</li>
+<li>View:
+
+<ul>
+<li>各プラットフォームで異なるMVC</li>
+<li>PDSの視点を適用した結果がMVCの各プラットフォームで異なる図になる</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Architecture記述はStructure記述ではない
+
+<ul>
+<li>アーキテクチャ設計=関心事の分離のための記述だから、
+  Viewpoint（視点）ありきでView（アーキテクチャ記述のview）がある。</li>
+</ul>
+</li>
+<li>SIerのWebシステムとかは「Transaction Script」。</li>
+<li>C/Sやスマホアプリ等のリッチクライアントとかは状態管理しなきゃいけないので、
+  Transaction Scriptでは破綻する。</li>
+<li>いろんなアプローチがある。</li>
+</ul>
+
+
+<h4>まとめ</h4>
+
+<ul>
+<li>アーキテクチャは複雑さへの対処
+
+<ul>
+<li>アプローチは関心事の分離。</li>
+</ul>
+</li>
+<li>アーキテクチャの表現のされ方
+
+<ul>
+<li>アーキテクチャを単一のViewで記述できない</li>
+<li>アーキテクチャは複数のViewpointとViewで構成されるアーキテクチャ記述で表現される</li>
+</ul>
+</li>
+</ul>
+
+
+<p>マーティンファウラーの「Presentation Domain Separation」は
+後日読んでみようかな。</p>
+
+<p>発表内容は、自分の知る「アーキテクチャ」の概念が実は誤りだったかもしれないので、
+聞いてて混乱してきた部分が多い。
+いろいろ調べて理解しないと、やばいなこりゃ。</p>
+
+<h3>組織設計の基礎理論と実践</h3>
+
+<!-- 松岡梨沙 さま -->
+
+
+<p>最後に、Matsuki**さん (@liliput) の発表。</p>
+
+<p>発表について、ブログでまとめられております。
+<a href="http://lllagoon.hatenablog.com/entry/2014/01/23/145805">長岡で話したこと / 話さなかったこと #NDS35  &ndash; エルの楽園</a></p>
+
+<h4>以下、メモ</h4>
+
+<p>「組織設計」って言葉は、個人的にはあまり耳慣れない言葉でした。
+組織を設計するということは、プロジェクトマネジメントのようなものなのかなと思った。</p>
+
+<p>プロジェクトマネジメントについては、今後いろいろとやらなければならない立場なので、
+お勉強中だったりする。
+小規模プロジェクトからやらさせていただいているけど、
+なかなか大変ですね。</p>
+
+<p>組織設計も、他の設計と同様に、
+「何を」「どのように」「どうやって」をしていくことであって
+プロジェクトマネジメントも同じかなと。</p>
+
+<p>以下、気になった言葉のメモ</p>
+
+<ul>
+<li>時間を区切って考える
+
+<ul>
+<li>時間軸から考える組織運営
+
+<ul>
+<li>目標はいつまでに達成？</li>
+<li>その期間、どのように組織は変化する？</li>
+<li>目標が達成されたとき、その組織はどうなる？</li>
+</ul>
+</li>
+<li>ある一定の期間で、いろいろと変化するはず</li>
+</ul>
+</li>
+<li>時間経過による構成員の流動
+
+<ul>
+<li>組織への流入 &ndash; 構成員をどう選ぶ？</li>
+<li>組織の運営 &ndash; 構成員の品質をどう保つ？</li>
+<li>組織からの流出 &ndash; 構成員が去った後どうする？</li>
+</ul>
+</li>
+<li>戦略？戦術？
+
+<ul>
+<li>戦略：目的とリソース配分方針の設定</li>
+<li>戦術：上記条件を達成するための手段</li>
+</ul>
+</li>
+<li>戦略と戦術との本当の関係
+
+<ul>
+<li>現状のリソースと持っている戦術</li>
+<li>単純な階層構造ではなく、スパイラルでフラクタルな関係にある。</li>
+<li>戦略はテンポラリでプライベートなものであり、当事者以外の誰にも作れません。</li>
+<li>戦術はユニバーサルで、条件さえ合うならば、他の局面でも応用可能</li>
+</ul>
+</li>
+<li>リーンでアジャイルなスタイルを組織にも…
+
+<ul>
+<li>PDCAでまわす</li>
+<li>最初からすべてを詰め込まない</li>
+<li>すべての人を巻き込む</li>
+</ul>
+</li>
+<li>状況変化への対応と問題解決のために</li>
+<li>根拠とは
+
+<ul>
+<li>誰でも参照できる</li>
+<li>誰が見てもそう判断できる</li>
+</ul>
+</li>
+<li>内面化
+
+<ul>
+<li>クレイトン・クリステンセン「イノベーションのジレンマ」</li>
+</ul>
+</li>
+<li>偉い人が「ルール」を作るだけでは誰もついてこない。</li>
+<li>1ヶ月から3ヶ月で人間の価値観は変わる。</li>
+<li>組織の中で気づかないうちに何がおこっているのか？</li>
+<li>いかなるシステムがそれを再生産し続けているのか？</li>
+<li>調査をしやすくする下地を作るために有効なあの手この手
+
+<ol>
+<li> 数会話
+
+<ul>
+<li>具体的な思考の癖がつく</li>
+<li>客観的に行う習慣ができる</li>
+<li>時間や労力、予算、進捗といった主観的な状況記述にコンセンサスがとれる</li>
+</ul>
+</li>
+<li> Job Descriptionを書いてみる
+
+<ul>
+<li>「職務記述書」と呼ばれたりする。</li>
+<li>たとえ実際の人事プロセスに反映されないとしても、</li>
+<li>「自分たちの業務は何なのか」「どういう人材を望ましいと考えているのか」の
+  コンセンサスをとってみる。</li>
+<li>技能的側面 + 情意的側面 = 能力
+
+<ul>
+<li>(competency) + (personality) = (Ability)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> Evidence Based Scheduling
+
+<ul>
+<li>Joel Spolsky氏提唱</li>
+<li>各タスクにかかる時間を測定し、それらのデータから統計的に作業時間を見積もる。</li>
+<li>「Joel on Software」</li>
+</ul>
+</li>
+<li> 「射撃しつつ前進」
+
+<ul>
+<li>とりあえずやれることをやるだけやってみる！
+
+<ul>
+<li>「試験的に」／「この部分だけ」／「ちょっとの間」</li>
+<li>改善策を最初から完璧に実行しない</li>
+<li>正負に関わらず、どんなフィードバックがあるかを冷静に観察する</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>何が起こっているのかを把握する。</li>
+<li>これらの方法だけでは、問題を解決しません。</li>
+<li>何が起こっているのかを知る手がかりの一部を教えてくれるし、
+  原因追求を可能にする「土壌」を作ってくれる。</li>
+</ul>
+
+
+<h3>メインセッション感想</h3>
+
+<p>今回はすごい回でした。
+自分の理解している事、理解不足の事、
+初めて聞く言葉も結構多かったですけど、
+いろいろ感じるところがありました。</p>
+
+<p>「何を」「どのように」したいのかを考える前提があって
+アプリケーションだったりプログラムだったり組織だったり、
+いろいろな場面で「設計」が役に立つこと。
+改めて思い知らされました。</p>
+
+<p>あとは、<a href="http://www.amazon.co.jp/dp/4274066304">Joel on Software</a>読むべし。</p>
+
+<h2>LT</h2>
+
+<p>今新潟で勢いのある「ウォーターセル」勢から、
+いろいろとLTがありました。</p>
+
+<p>「PHP駆逐！」だったり、「iPadすげー」だったり、
+面白いセッションでした。</p>
+
+<h2>懇親会</h2>
+
+<p>所用があったので、懇親会は欠席となりました。
+NDS（Niigata Developer&rsquo;s Shinnenkai: 新潟開発者新年会）も行われたのに、
+参加できなかったのが心残り。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">kasacchiful</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-18T12:45:00+09:00" pubdate data-updated="true">Jan 18<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/nds/'>NDS</a>, <a class='category' href='/blog/categories/mian-qiang-hui/'>勉強会</a>, <a class='category' href='/blog/categories/she-ji/'>設計</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kasacchiful.github.com/blog/2014/01/18/nds35/" data-via="" data-counturl="http://kasacchiful.github.com/blog/2014/01/18/nds35/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/01/11/postgres_vacuum/" title="Previous Post: PostgreSQL Vacuum について">&laquo; PostgreSQL Vacuum について</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/03/15/nds36/" title="Next Post: NDS36に参加しました。">NDS36に参加しました。 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <div><img src="http://www.gravatar.com/avatar/82d6167c4d14393c2e20b37a74b363c5"></div>
+  <p>新潟でWeb、業務アプリ、インフラ、etc. とにかくなんでもやるエンジニア。</p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/13/ndsmeetup1/">NDS meetup in Niigataに参加しました。</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/18/chrome_favicon/">ChromeでURLルートディレクトリにfavicon.icoが無いとセッション切れする</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/15/nds36/">NDS36に参加しました。</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/18/nds35/">NDS35に参加しました。</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/11/postgres_vacuum/">PostgreSQL Vacuum について</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - kasacchiful -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kasacchifulsblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kasacchiful.github.com/blog/2014/01/18/nds35/';
+        var disqus_url = 'http://kasacchiful.github.com/blog/2014/01/18/nds35/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

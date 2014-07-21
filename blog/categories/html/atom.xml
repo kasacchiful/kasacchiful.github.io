@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: HTML | Kasacchiful's Blog]]></title>
+  <link href="http://kasacchiful.github.com/blog/categories/html/atom.xml" rel="self"/>
+  <link href="http://kasacchiful.github.com/"/>
+  <updated>2014-07-21T16:46:05+09:00</updated>
+  <id>http://kasacchiful.github.com/</id>
+  <author>
+    <name><![CDATA[kasacchiful]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ChromeでURLルートディレクトリにfavicon.icoが無いとセッション切れする]]></title>
+    <link href="http://kasacchiful.github.com/blog/2014/06/18/chrome_favicon/"/>
+    <updated>2014-06-18T22:55:00+09:00</updated>
+    <id>http://kasacchiful.github.com/blog/2014/06/18/chrome_favicon</id>
+    <content type="html"><![CDATA[<p>タイトルの件が発生したので、メモ。</p>
+
+<h2>Chromeでセッション切れ発生</h2>
+
+<p>とあるWebシステムで、Chromeでアクセスした際に、ログイン後の画面から別の画面へのリンクをクリックすると、ログイン画面に戻される。
+再ログインした後の画面から別の画面へのリンクをクリックすると、またログイン画面に戻される。</p>
+
+<p>開発環境では発生せず、ステージング環境で発生してしまう。</p>
+
+<!-- more -->
+
+
+<h2>とりあえず、Cookieを見る</h2>
+
+<p>ChromeのデベロッパーツールでCookieの値を確認してみる。
+ログイン後の画面でのセッションキーの値と、リンクをクリックした際に戻されたログイン画面でのセッションキーの値に相違があることが判明。
+セッションキーの値が変わっているので、ログインセッションが切れたようです。</p>
+
+<p>原因がさっぱりわからなかったので、google先生に聞いてみました。</p>
+
+<h2>favicon.ico が原因？</h2>
+
+<p>google先生に聞いてみると、
+どうやらfavicon.icoが無いとセッション切れするらしい。</p>
+
+<p>chromeでは、linkタグにfavicon.icoの指定がなければ、
+URLルート直下にfavicon.icoにあるものと判断し、そこから取得しようとするようです。</p>
+
+<p>favicon.icoファイル自体は存在していて、
+開発環境ではURLルート直下にあるので、開発環境ではChromeでログインセッションが保たれているようです。
+ステージング環境ではサブディレクトリ配下でアプリケーションが動いているため、
+URLルート直下ではなく、サブディレクトリにfavicon.icoがあるからステージング環境で発生してしまう。</p>
+
+<p>例えば、linkタグでfavicon.icoを指定してあげるようにすると、解決する。</p>
+
+<p><code>
+&lt;link rel="shortcut icon" href="http://kasacchiful.github.com/hoge/foo/bar/favicon.ico" /&gt;
+</code></p>
+
+<p>開発環境とステージング環境では、favicon.icoのURLが異なるため、
+そこはうまいこと指定できるようにしてあげました。</p>
+
+<p>本アプリはRailsだったので、<code>favicon_image_tag</code>ヘルパーを使って対応しました。
+Rails3以降で使えるヘルパーなので、
+Rails2以前では、<code>ActionController::Base.relative_url_root</code>や<code>request.relative_url_root</code>等をうまく使って対応できそう。</p>
+
+<p>それにしても、favicon.ico取得で404エラーすると、セッション切れちゃうのは、
+何だか気持ち悪いですけどね。</p>
+]]></content>
+  </entry>
+  
+</feed>

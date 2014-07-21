@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 日記 | Kasacchiful's Blog]]></title>
   <link href="http://kasacchiful.github.com/blog/categories/ri-ji/atom.xml" rel="self"/>
   <link href="http://kasacchiful.github.com/"/>
-  <updated>2014-01-11T16:12:14+09:00</updated>
+  <updated>2014-07-21T16:46:05+09:00</updated>
   <id>http://kasacchiful.github.com/</id>
   <author>
     <name><![CDATA[kasacchiful]]></name>
@@ -12,6 +12,129 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[PostgreSQL Vacuum について]]></title>
+    <link href="http://kasacchiful.github.com/blog/2014/01/11/postgres_vacuum/"/>
+    <updated>2014-01-11T21:22:00+09:00</updated>
+    <id>http://kasacchiful.github.com/blog/2014/01/11/postgres_vacuum</id>
+    <content type="html"><![CDATA[<p>とあるシステムの障害に巻き込まれてしまって、
+いろいろ対応したので、メモします。</p>
+
+<p>簡単にいうと、PostgreSQLのデータ空き容量の確保についてのメモです。</p>
+
+<!-- more -->
+
+
+<h2>今回の環境</h2>
+
+<ul>
+<li>OS: CentOS 5.5</li>
+<li>DB: PostgreSQL 8.1.23</li>
+</ul>
+
+
+<h2>PostgreSQLのオブジェクトファイルの場所</h2>
+
+<p>デフォルトでは、 /var/lib/pgsql/data/base 配下にあるようです。
+PostgreSQLのディスク使用量は、以下のコマンドで取得しました。</p>
+
+<p>```</p>
+
+<h1>cd /var/lib/pgsql/</h1>
+
+<h1>du -h &mdash;max-depth=1</h1>
+
+<p>```</p>
+
+<p>実際のオブジェクトファイル名は、オブジェクトID（数字）のため、
+ファイル名とテーブル名等の対応がわからないと、
+どのテーブルがどれだけディスクを消費しているのかわかりません。</p>
+
+<h2>オブジェクトファイルサイズの確認</h2>
+
+<p>以下のpsqlコマンドから、SQLを使ってオブジェクトファイルのサイズを取得しました。
+$DBUSER, $DBNAME, $FILENAME は適宜置き換えてください。</p>
+
+<p><code>
+psql -U $DBUSER $DBNAME -c 'SHOW block_size;'
+psql -U $DBUSER $DBNAME -c 'SELECT relname, relfilenode, ROUND(relpages*8/1024.0,2) AS MB FROM pg_class WHERE relpages &gt; 1 ORDER BY relpages DESC;' &gt;&gt; $FILENAME
+</code></p>
+
+<p><code>SHOW block_size</code> でまずは、ブロックサイズの確認です。
+デフォルトは8キロバイト(8192)です。</p>
+
+<p>pg_class カタログには、テーブルの他にもインデックスやビューなどを目録にしているそうです。
+relnameがテーブル等の名前、relfilenodeがディスク上のファイル名、
+&ldquo;relpages * ブロックサイズ"がディスク上のサイズとなります。
+MB での表記にして、おおよその容量を取得しています。
+（※ <code>8192/(1024*1024) = 8/1024</code> となります。）
+ちなみに、relpages自体は、プランナで使用される単なる推測値のようです。</p>
+
+<h2>vacuum と reindex</h2>
+
+<p>今回は、容量のほとんどをpostgresqlが使っていたため、
+以下のことをして、対処しました。</p>
+
+<ol>
+<li>巨大なindexを一旦dropして空き容量確保。</li>
+<li>不要なデータの削除。</li>
+<li>テーブルに対して、vacuum fullの実行。</li>
+<li>vacuumするとindexが肥大化するので、reindexを実行してindexの再構築。</li>
+<li>dropしたindexを再作成。</li>
+</ol>
+
+
+<p>最初に巨大なindexをdropして、空き容量を確保しました。
+容量の大きい順で10個drop。主キーのindexはdrop対象から除いています。
+空き容量を確保したことでサーバが応答し始めました。まずは、応急処置としての対応となります。</p>
+
+<p>応急処置だけでは、応答し始めたとしても応答自体の速度はよくありません。
+index削除しただけですから。
+そこで、不要なデータを削除して、vacuum fullを試みました。</p>
+
+<p>postgresql 8.1だったので、vacuum fullは、かなりの時間がかかります。
+本当はclusterを使いたかったのですが、容量の関係等もあって断念。
+テーブル毎に時間をかけながらvacuum fullです。
+vacuum fullすると、indexのサイズが大きくなるので、
+併せてreindexも実行します。</p>
+
+<p>全てのテーブルとインデックスに対処したら、
+最初にdropしたindexを再作成して完了です。</p>
+
+<h2>定期的なvacuum</h2>
+
+<p>さて、このままだと、月日が経てばまた同様の症状が発生することが目に見えていました。</p>
+
+<ul>
+<li>不要なデータがたまり続けてしまうかも？</li>
+<li>定期的なvacuumが機能していない？</li>
+</ul>
+
+
+<p>こんなことは、構築時に担当者なりが事前にチェックするものですが、
+どこかの時期もしくはどこかのタイミングで止まってしまったのかもしれません。</p>
+
+<p>vacuum fullを毎日実行するとかは非現実的ですので、
+まずは、vacuumがうまく機能させるためにFSMの適正化や実行タイミングを調査して設定。
+そして、週末の負荷があまりない時間帯にclusterを定期実行するように設定しました。</p>
+
+<h2>vacuum fullの補足</h2>
+
+<p>vacuum fullは9.0から方式が変更になっている。
+詳細は<a href="http://wiki.postgresql.org/wiki/VACUUM_FULL/ja">こちら</a>をご確認いただきたい。</p>
+
+<p>9.0からはCLUSTERに似た実装になっているため、
+9.0以降のvaccum fullは実行速度が速くなったかわりに、十分な空き容量が必要になります。
+つまり、容量不足の場合は、事前にindexの削除等で十分な空き容量を空ける必要があります。</p>
+
+<h2>参考</h2>
+
+<p><a href="http://www.postgresql.jp/document/8.1/html/catalog-pg-class.html">pg_class</a><br/>
+<a href="http://wiki.postgresql.org/wiki/VACUUM_FULL/ja">VACUUM FULL/ja &ndash; PostgreSQL wiki</a><br/>
+<a href="http://chulip.org/entry/2013/04/23/165535">PostgreSQLのvacuumとvacuum fullの違い &ndash; chulip.org</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[2014年に向けて]]></title>
