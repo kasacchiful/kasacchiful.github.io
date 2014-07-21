@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>2年前に作ったものを今更ながら公開しました - Kasacchiful's Blog</title>
+  <meta name="author" content="kasacchiful">
+
+  
+  <meta name="description" content="先日のNDS#36のLTでしゃべった内容について、
+ようやくGitHubにアップしましたので、説明します。
+かなり期間が空いてしまったのは、反省点。 何を作ったのか？ ビンゴゲームで、あたった番号を表示するアプリです。
+また景品の画像も表示できるようにしてます。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kasacchiful.github.com/blog/2014/07/21/bingo_sample/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Kasacchiful's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37134436-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kasacchiful's Blog</a></h1>
+  
+    <h2>プログラミングとか少しずつメモ書き</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kasacchiful.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">2年前に作ったものを今更ながら公開しました</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-21T17:00:00+09:00" pubdate data-updated="true">Jul 21<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>先日のNDS#36のLTでしゃべった内容について、
+ようやくGitHubにアップしましたので、説明します。
+かなり期間が空いてしまったのは、反省点。</p>
+
+<!-- more -->
+
+
+<h2>何を作ったのか？</h2>
+
+<p>ビンゴゲームで、あたった番号を表示するアプリです。
+また景品の画像も表示できるようにしてます。</p>
+
+<p>サンプルは<a href="https://github.com/kasacchiful/bingo_sample">GitHub</a>に公開しています。</p>
+
+<h2>なぜ作ったのか？</h2>
+
+<p>NDS#36のLTでしゃべったのですが、時間がほとんどない状況だったので、
+詳しくしゃべれませんでした。</p>
+
+<p>結婚式の2次会用に作ったものです。
+今まで、結婚式2次会幹事を4回やっておりますが、余興を考えていると、
+あんまり凝った内容のものは、参加者はお酒が入って酔っ払っているため、さっぱり覚えきれなくてつまらくなってしまうんです。</p>
+
+<p>3回目の2次会幹事の際に、「適当ビンゴ」なるものをやりました。（ググるといろいろ出てきます。）
+これは、新郎新婦にゆかりのある数字や、司会者の判断（時間的な都合等）で、
+一気に複数の数字があたるようなビンゴになっています。</p>
+
+<p>ビンゴマシーンいらずで、ビンゴカードのみで実施できるのですが、
+参加人数が100人規模だったので、
+何番が該当するのか口頭だけだと伝わりにくいなぁということと
+何番がまだコールされていないかが司会者が判断しにくいということで、
+「会場のプロジェクタやモニタ使って、番号を表示してしまえばいいじゃん」
+ということになりました。</p>
+
+<p>さくっとできそうだったので、私が2時間程度で作ってしまいました。
+（内1時間は画像作成）</p>
+
+<h2>使い方</h2>
+
+<p>ただのHTMLなので、ブラウザで開いて、お使いください。</p>
+
+<h3>入手先</h3>
+
+<p>まずは、<a href="https://github.com/kasacchiful/bingo_sample">GitHub</a>から、ダウンロードしてください。
+ダウンロードの仕方がわからない方は、右側メニューの下側にある「Download ZIP」をクリックし、
+ダウンロードしたzipファイルを解凍します。</p>
+
+<p>ダウンロードリンクも <a href="https://github.com/kasacchiful/bingo_sample/archive/master.zip">ここ</a> に貼っておくので、
+ここからダウンロードしてもかまいません。</p>
+
+<h3>起動方法</h3>
+
+<p>番号の横並び、もしくは、縦並びがあります。
+index.html もしくは vertical.html をブラウザで開いてください。
+ブラウザで開いたら、URL表示部分等を隠すために、全画面表示することをオススメします。</p>
+
+<h3>初期状態へ戻す</h3>
+
+<p>ブラウザの再表示（F5など）で、最初の表示に戻ります。</p>
+
+<h3>終了方法</h3>
+
+<p>ブラウザを閉じるだけです。</p>
+
+<h2>画像の差替</h2>
+
+<p>景品画像等を表示するために、
+画面左側にマウスカーソルを合わせると
+リンクがにょきっと出てきます。</p>
+
+<p>リンクをクリックすると、画像がモーダル風に表示されます。</p>
+
+<p>黒背景部分をクリックすると、画像が非表示になり、元に戻ります。</p>
+
+<p>GitHubにあるのは、サンプル画像なので、
+適宜差し替えてご使用ください。</p>
+
+<h3>画像の保存場所</h3>
+
+<p>imagesディレクトリ内に保存してください。</p>
+
+<h3>画像の呼び出し変更</h3>
+
+<p>index.htmlもしくはvertical.htmlの以下の部分を
+テキストエディタで編集します。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>  <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&#39;navigation&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&#39;A&#39;</span><span class="nt">&gt;&lt;a</span> <span class="na">title=</span><span class="s">&#39;A賞&#39;</span> <span class="na">class=</span><span class="s">&#39;openmodalbox&#39;</span> <span class="na">href=</span><span class="s">&#39;images/A.jpg&#39;</span><span class="nt">&gt;</span>A賞<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&#39;B&#39;</span><span class="nt">&gt;&lt;a</span> <span class="na">title=</span><span class="s">&#39;B賞&#39;</span> <span class="na">class=</span><span class="s">&#39;openmodalbox&#39;</span> <span class="na">href=</span><span class="s">&#39;images/B.jpg&#39;</span><span class="nt">&gt;</span>B賞<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&#39;C&#39;</span><span class="nt">&gt;&lt;a</span> <span class="na">title=</span><span class="s">&#39;C賞&#39;</span> <span class="na">class=</span><span class="s">&#39;openmodalbox&#39;</span> <span class="na">href=</span><span class="s">&#39;images/C.jpg&#39;</span><span class="nt">&gt;</span>C賞<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/ul&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>href='images/A.jpg'</code>部分に画像ファイル名を、<code>A賞</code>部分に画面に表示されるリンク名（景品名等）を各々変更してください。
+景品の数が多い場合は、<code>&lt;li</code>から始まる1行をコピペして景品数分並べてください。</p>
+
+<h2>今後の予定？</h2>
+
+<p>せっかく公開したので、何か作りたい。
+自分の勉強のために、Webサービス化してもいいかも。</p>
+
+<p>後は、タブレット対応して、番号を押しやすくしてみたい。</p>
+
+<h2>注意</h2>
+
+<p>本アプリケーションによって生じるいかなる損失等は、当方は一切の責任を持ちません。
+特に、画像の呼び出し変更部分の際に、誤ってアプリケーションが動かなくなる等の事が発生することが想定されますが、
+当方は一切のサポートはできません。
+HTMLに詳しい身内の方に修正をお願いしてください。</p>
+
+<p>また、動作環境はMac版のGoogle Chromeで行っています。
+Google ChromeおよびMozilla Firefoxで動作しますが、
+Microsoft Internet Explorerでは動作しません。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">kasacchiful</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-21T17:00:00+09:00" pubdate data-updated="true">Jul 21<span>st</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/html/'>HTML</a>, <a class='category' href='/blog/categories/nds/'>NDS</a>, <a class='category' href='/blog/categories/apuri/'>アプリ</a>, <a class='category' href='/blog/categories/mian-qiang-hui/'>勉強会</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kasacchiful.github.com/blog/2014/07/21/bingo_sample/" data-via="" data-counturl="http://kasacchiful.github.com/blog/2014/07/21/bingo_sample/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/07/13/ndsmeetup1/" title="Previous Post: NDS meetup in Niigataに参加しました。">&laquo; NDS meetup in Niigataに参加しました。</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <div><img src="http://www.gravatar.com/avatar/82d6167c4d14393c2e20b37a74b363c5"></div>
+  <p>新潟でWeb、業務アプリ、インフラ、etc. とにかくなんでもやるエンジニア。</p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/21/bingo_sample/">2年前に作ったものを今更ながら公開しました</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/13/ndsmeetup1/">NDS meetup in Niigataに参加しました。</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/18/chrome_favicon/">ChromeでURLルートディレクトリにfavicon.icoが無いとセッション切れする</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/15/nds36/">NDS36に参加しました。</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/18/nds35/">NDS35に参加しました。</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - kasacchiful -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kasacchifulsblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kasacchiful.github.com/blog/2014/07/21/bingo_sample/';
+        var disqus_url = 'http://kasacchiful.github.com/blog/2014/07/21/bingo_sample/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
