@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>NDS37に参加しました。 - Kasacchiful's Blog</title>
+  <meta name="author" content="kasacchiful">
+
+  
+  <meta name="description" content="第37回NDS（長岡開発者勉強会）に参加しました。 第37回勉強会(2014/08/09) - 長岡 IT開発者 勉強会(NDS) 今回のテーマは、「並列・並行処理」。
+前回同様、いろんな言語たちの「並列・並行処理」が集まりました。
+並行処理にあまり詳しくない私にも、わかりやすい内容でした。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kasacchiful.github.com/blog/2014/08/09/nds37">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Kasacchiful's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37134436-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kasacchiful's Blog</a></h1>
+  
+    <h2>プログラミングとか少しずつメモ書き</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kasacchiful.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">NDS37に参加しました。</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-08-09T23:45:00+09:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:45 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>第37回NDS（長岡開発者勉強会）に参加しました。</p>
+
+<p><a href="http://nagaoka.techtalk.jp/no37">第37回勉強会(2014/08/09) - 長岡 IT開発者 勉強会(NDS)</a></p>
+
+<p>今回のテーマは、「並列・並行処理」。
+前回同様、いろんな言語たちの「並列・並行処理」が集まりました。
+並行処理にあまり詳しくない私にも、わかりやすい内容でした。
+簡単にまとめてみます。</p>
+
+<!-- more -->
+
+
+<h2>メインセッション</h2>
+
+<h3>Concurrency programming with Akka (@neko_gata_s)</h3>
+
+<p>@neko_gata_s さんの発表。ScalaのAkkaによるアクターで並行処理したという内容。
+資料は<a href="https://speakerdeck.com/shinpeim/concurrency-programming-with-akka">こちら</a>。</p>
+
+<p>最初に、美少女Akkaの説明(w)と、並列・並行処理の説明をしてくれました。
+並行処理の課題など、丁寧に説明していただきましたので、
+最初に@neko_gata_sの説明を聞いたので、この後の方の説明もわかりやすく聞けました。</p>
+
+<p>その後、課題を克服するために、アクターモデルを使った並行処理についての説明。
+アクターモデルをbeer</p>
+
+<ol>
+<li>send message</li>
+<li>fetch message</li>
+<li>process message</li>
+</ol>
+
+
+<p>drunk exception で例外発生、インスタンス破棄。
+でもmail boxはあるので、Actor A はがんがんmessageを送ることができる。
+新たに生まれたActor Bがmessageに溜まったbeerをfetch and process messagesしていく。</p>
+
+<p>Let it crash!
+「Akka は JVM上で動くErlang」。</p>
+
+<p>ちなみに、@neko_gata_sのActorモデルの資料はわかりやすいので、一読すべし。
+<a href="https://gist.github.com/Shinpeim/ef7ce82595cb96ef4aa6">https://gist.github.com/Shinpeim/ef7ce82595cb96ef4aa6</a>
+<a href="http://akka.io/">http://akka.io/</a></p>
+
+<!--
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">import</span> <span class="nn">akka.actor._</span>
+</span><span class='line'><span class="k">import</span> <span class="nn">scala.concurrent.duration._</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">object</span> <span class="nc">EntryPoint</span> <span class="k">extends</span> <span class="nc">App</span> <span class="o">{</span>
+</span><span class='line'>  <span class="k">val</span> <span class="n">actorSystem</span> <span class="k">=</span> <span class="nc">ActorSystem</span><span class="o">.</span><span class="n">create</span><span class="o">()</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">val</span> <span class="n">actorA</span> <span class="k">=</span> <span class="n">actorSystem</span><span class="o">.</span><span class="n">actorOf</span><span class="o">(</span><span class="nc">Props</span><span class="o">[</span><span class="kt">ActorA</span><span class="o">])</span>
+</span><span class='line'>  <span class="n">actorA</span> <span class="o">!</span> <span class="nc">Start</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">case</span> <span class="k">object</span> <span class="nc">Start</span>
+</span><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">Beer</span><span class="o">(</span><span class="n">amount</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span>
+</span><span class='line'><span class="k">case</span> <span class="k">class</span> <span class="nc">Wine</span><span class="o">(</span><span class="n">amount</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">DrunkException</span> <span class="k">extends</span> <span class="nc">Exception</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">CantHandleMessageException</span> <span class="k">extends</span> <span class="nc">Exception</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">ActorA</span> <span class="k">extends</span> <span class="nc">Actor</span> <span class="o">{</span>
+</span><span class='line'>  <span class="k">override</span> <span class="k">val</span> <span class="n">supervisorStrategy</span> <span class="k">=</span> <span class="nc">OneForOneStrategy</span><span class="o">(</span><span class="n">maxNrOrRetries</span> <span class="k">=</span> <span class="mi">10</span><span class="o">,)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">case</span> <span class="k">_</span> <span class="k">:</span> <span class="kt">CantHandleMessageException</span> <span class="o">=&gt;</span> <span class="nc">SupervisorStrategy</span><span class="o">.</span><span class="nc">Stop</span>
+</span><span class='line'>    <span class="k">case</span> <span class="k">_</span> <span class="k">:</span> <span class="kt">DrunkException</span> <span class="o">=&gt;</span> <span class="nc">SupervisorStrategy</span><span class="o">.</span><span class="nc">Restart</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="n">receive</span><span class="k">:</span> <span class="kt">Receive</span> <span class="o">=</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">case</span> <span class="nc">Start</span> <span class="k">=&gt;</span>
+</span><span class='line'>      <span class="k">val</span> <span class="n">actorB1</span> <span class="k">=</span> <span class="n">context</span><span class="o">.</span><span class="n">actorOf</span><span class="o">(</span><span class="nc">Props</span><span class="o">[</span><span class="kt">ActorB</span><span class="o">])</span>
+</span><span class='line'>      <span class="k">val</span> <span class="n">actorB2</span> <span class="k">=</span> <span class="n">context</span><span class="o">.</span><span class="n">actorOf</span><span class="o">(</span><span class="nc">Props</span><span class="o">[</span><span class="kt">ActorB</span><span class="o">])</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="n">actorB1</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
+</span><span class='line'>      <span class="n">actorB1</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+</span><span class='line'>      <span class="n">actorB1</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">3</span><span class="o">)</span>
+</span><span class='line'>      <span class="n">actorB1</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">4</span><span class="o">)</span>
+</span><span class='line'>      <span class="n">actorB1</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">5</span><span class="o">)</span>  <span class="c1">// 例外発生するはず、そして死&amp;復活 (Restart)</span>
+</span><span class='line'>      <span class="n">actorB1</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">3</span><span class="o">)</span>  <span class="c1">// まっさらなactorBなので、飲めるはず</span>
+</span><span class='line'>      <span class="n">actorB1</span> <span class="o">!</span> <span class="nc">Wine</span><span class="o">(</span><span class="mi">10</span><span class="o">)</span>  <span class="c1">// 例外 stop</span>
+</span><span class='line'>      <span class="n">actorB1</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">3</span><span class="o">)</span>  <span class="c1">// 宛先不明</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="n">actorB2</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+</span><span class='line'>      <span class="n">actorB2</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+</span><span class='line'>      <span class="n">actorB2</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+</span><span class='line'>      <span class="n">actorB2</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+</span><span class='line'>      <span class="n">actorB2</span> <span class="o">!</span> <span class="nc">Beer</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">ActorB</span> <span class="k">extends</span> <span class="nc">Actor</span> <span class="k">with</span> <span class="nc">ActorLogging</span> <span class="o">{</span>
+</span><span class='line'>  <span class="k">var</span> <span class="n">drunk</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="n">receive</span><span class="k">:</span> <span class="kt">Receive</span> <span class="o">=</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">case</span> <span class="nc">Beer</span><span class="o">(</span><span class="n">amount</span><span class="o">)</span> <span class="k">=&gt;</span>
+</span><span class='line'>      <span class="n">drunk</span> <span class="o">+=</span> <span class="n">amount</span>
+</span><span class='line'>      <span class="k">if</span> <span class="o">(</span><span class="n">drunk</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">throw</span> <span class="k">new</span> <span class="nc">DrunkException</span>
+</span><span class='line'>      <span class="o">}</span>
+</span><span class='line'>      <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="o">(</span><span class="n">s</span><span class="s">&quot;drunk ${amount} glass(es) of beer&quot;</span><span class="o">)</span>
+</span><span class='line'>    <span class="k">case</span> <span class="k">_</span> <span class="k">=&gt;</span>
+</span><span class='line'>      <span class="k">throw</span> <span class="k">new</span> <span class="nc">CantHandleMessageException</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+-->
+
+
+<h3>ゴルーチンと並行性パターン (@hayajo)</h3>
+
+<p>@hayajoさんの発表。Go言語のゴルーチンを使った並行処理についての説明。
+発表資料は<a href="https://gist.github.com/hayajo/f8917f39c6f0c0828c21">こちら</a>。</p>
+
+<p>ゴルーチン、syncによる同期、チャネルなど、
+Go言語の並行処理の基本的な機能を使って説明していただきました。</p>
+
+<p>最近、Go言語界隈が盛んな感じがひしひし伝わってくるので、
+前回のNDS#36同様、少しずつ触れていきたい言語の一つですね。</p>
+
+<p>Go言語のActorモデルもあるし、なんでも出来そう。</p>
+
+<p>ちなみに、Go langのコルーチンは、Rubyのyieldとは違って、pythonのyieldに近いとのこと。
+Rubyはfiberに該当するかな？</p>
+
+<h3>C#で非同期のお話 (@AILight)</h3>
+
+<p>@AILightさんの発表。
+C#のお話というより、最初は並行処理の歴史の話からだったので、
+とても面白かったです。</p>
+
+<p>ちなみに、秋か冬にNIIGATA.NET（仮）が開催予定とのこと。</p>
+
+<p>それにしても、Visual Studioは賢いな。</p>
+
+<h3>Asynchronous programming for C (@dictav)</h3>
+
+<p>@dictavさんの発表。
+発表資料は<a href="">こちら</a>。</p>
+
+<p>FreeBSDやGrand Central Dispatchやlibuvだったり表紙にありますけど、
+説明できず断念とのこと。</p>
+
+<h3>Java並行処理今昔物語 (@civic)</h3>
+
+<p>主催の@civicさんの発表。
+発表資料は<a href="http://civic.xrea.jp/2014/08/11/nds37/">こちら</a>。</p>
+
+<p>Qiitaの記事をピックアップしたものとの事。</p>
+
+<h2>LT</h2>
+
+<p>この辺りで、だいぶ眠気が襲ってきた。
+おそらく、この週結構しんどかったから、疲れがたまっていたんだと思います。</p>
+
+<h3>ギョーム系でもAWS (@nemuzuka)</h3>
+
+<p>発表資料は<a href="http://nemuzuka.hatenablog.com/entry/2014/08/09/225841">こちら</a>。
+業務系開発でもAWS使えるよという話。
+今回はS3とCloudFront使ったとの事。</p>
+
+<p>AWSは、業務系でもいろいろ使えるけど、機能豊富でなかなか覚えられない。
+頑張ろうと自分に問いかける。</p>
+
+<!-- vss.jp.net -->
+
+
+<h3>AWSでDockerを普通に使う (@saisa6153)</h3>
+
+<p>AWS連チャン。</p>
+
+<p>Elastic BeanstalkとDockerを使ったというお話。
+AWSいいな。使いこなしたい。</p>
+
+<h3>Arduinoを買ってみた (@two_pack)</h3>
+
+<p>Arduino（アルドゥイーノ）を買って、いじってみたというお話。</p>
+
+<p>まさかのハードウェアライブ構築実践という新鮮さ。
+さらに組み込みプログラミングもライブコーディング。</p>
+
+<p>最高です。</p>
+
+<p>衝撃すぎて、あんまりArduino印象に残らなかった…。</p>
+
+<h3>Androidと並行処理 (@Nkzn)</h3>
+
+<h3>(タイトルなし) (@NPoi)</h3>
+
+<p>@NPoiさんのお話。
+スライド無しで、タイトルがありません。</p>
+
+<p>基本トークです。
+NDS in Niigataのお話もあり、
+USPのお話もありました。</p>
+
+<p>「lsおそいけど、チューニングすれば速くなるよ」
+というお話で締まりました。</p>
+
+<h2>懇親会</h2>
+
+<p>今回は所用につき、不参加でした。
+どうやらピザをいろいろ注文して楽しんだようです。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">kasacchiful</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-08-09T23:45:00+09:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:45 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/nds/'>nds</a>, <a class='category' href='/blog/categories/puroguramingu/'>プログラミング</a>, <a class='category' href='/blog/categories/mian-qiang-hui/'>勉強会</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://kasacchiful.github.com/blog/2014/08/09/nds37/" data-via="" data-counturl="http://kasacchiful.github.com/blog/2014/08/09/nds37/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/07/21/bingo_sample/" title="Previous Post: 2年前に作ったものを今更ながら公開しました">&laquo; 2年前に作ったものを今更ながら公開しました</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2015/01/12/new-year/" title="Next Post: 2015年">2015年 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <div><img src="http://www.gravatar.com/avatar/82d6167c4d14393c2e20b37a74b363c5"></div>
+  <p>新潟でWeb、業務アプリ、インフラ、etc. とにかくなんでもやるエンジニア。</p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/01/31/ndsniigata4/">NDS Meetup in Niigata #4 に参加しました</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/01/12/new-year/">2015年</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/09/nds37/">NDS37に参加しました。</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/21/bingo_sample/">2年前に作ったものを今更ながら公開しました</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/13/ndsmeetup1/">NDS Meetup in Niigataに参加しました。</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - kasacchiful -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kasacchifulsblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kasacchiful.github.com/blog/2014/08/09/nds37/';
+        var disqus_url = 'http://kasacchiful.github.com/blog/2014/08/09/nds37/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
