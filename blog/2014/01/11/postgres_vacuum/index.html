@@ -20,13 +20,13 @@ DB: PostgreSQL 8.1.23 PostgreSQLのオブジェクトファイルの場所 &hell
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://kasacchiful.github.com/blog/2014/01/11/postgres_vacuum">
+  <link rel="canonical" href="http://kasacchiful.github.com/blog/2014/01/11/postgres_vacuum/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Kasacchiful's Blog" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -64,7 +64,7 @@ DB: PostgreSQL 8.1.23 PostgreSQLのオブジェクトファイルの場所 &hell
   
 <form action="http://www.google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:kasacchiful.github.com" />
+    <input type="hidden" name="sitesearch" value="kasacchiful.github.com">
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -119,10 +119,10 @@ DB: PostgreSQL 8.1.23 PostgreSQLのオブジェクトファイルの場所 &hell
 <p>デフォルトでは、 /var/lib/pgsql/data/base 配下にあるようです。
 PostgreSQLのディスク使用量は、以下のコマンドで取得しました。</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'># cd /var/lib/pgsql/
-</span><span class='line'># du -h --max-depth=1</span></code></pre></td></tr></table></div></figure></notextile></div>
+</span><span class='line'># du -h --max-depth=1</span></code></pre></td></tr></table></div></figure>
 
 
 <p>実際のオブジェクトファイル名は、オブジェクトID（数字）のため、
@@ -134,10 +134,10 @@ PostgreSQLのディスク使用量は、以下のコマンドで取得しまし�
 <p>以下のpsqlコマンドから、SQLを使ってオブジェクトファイルのサイズを取得しました。
 $DBUSER, $DBNAME, $FILENAME は適宜置き換えてください。</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>psql -U $DBUSER $DBNAME -c 'SHOW block_size;'
-</span><span class='line'>psql -U $DBUSER $DBNAME -c 'SELECT relname, relfilenode, ROUND(relpages*8/1024.0,2) AS MB FROM pg_class WHERE relpages &gt; 1 ORDER BY relpages DESC;' &gt;&gt; $FILENAME</span></code></pre></td></tr></table></div></figure></notextile></div>
+</span><span class='line'>psql -U $DBUSER $DBNAME -c 'SELECT relname, relfilenode, ROUND(relpages*8/1024.0,2) AS MB FROM pg_class WHERE relpages &gt; 1 ORDER BY relpages DESC;' &gt;&gt; $FILENAME</span></code></pre></td></tr></table></div></figure>
 
 
 <p><code>SHOW block_size</code> でまずは、ブロックサイズの確認です。
@@ -312,7 +312,7 @@ vacuum fullすると、indexのサイズが大きくなるので、
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - kasacchiful -
+  Copyright &copy; 2017 - kasacchiful -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

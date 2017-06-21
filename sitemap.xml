@@ -1,141 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2015/01/31/ndsniigata4/</loc>
-    <lastmod>2015-01-31T23:45:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2015/01/12/new-year/</loc>
-    <lastmod>2015-01-12T21:25:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2014/08/09/nds37/</loc>
-    <lastmod>2014-08-09T23:45:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2014/07/21/bingo_sample/</loc>
-    <lastmod>2014-07-21T17:00:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2014/07/13/ndsmeetup1/</loc>
-    <lastmod>2014-07-13T22:45:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2014/06/18/chrome_favicon/</loc>
-    <lastmod>2014-06-18T22:55:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2014/03/15/nds36/</loc>
-    <lastmod>2014-03-15T12:45:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2014/01/18/nds35/</loc>
-    <lastmod>2014-01-18T12:45:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2014/01/11/postgres_vacuum/</loc>
-    <lastmod>2014-01-11T21:22:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2014/01/05/new_year/</loc>
-    <lastmod>2014-01-05T22:47:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2013/11/18/nds34/</loc>
-    <lastmod>2013-11-18T23:36:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2013/09/29/nds33/</loc>
-    <lastmod>2013-09-29T22:36:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2013/09/05/niigatarb3/</loc>
-    <lastmod>2013-09-05T20:36:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2013/09/03/crossing/</loc>
-    <lastmod>2013-09-03T23:11:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2013/07/06/nds32/</loc>
-    <lastmod>2013-07-06T13:36:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2013/04/12/nds31/</loc>
-    <lastmod>2013-04-12T16:15:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2013/04/02/niigata-ll/</loc>
-    <lastmod>2013-04-02T10:32:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2013/03/30/jasst13niigata/</loc>
-    <lastmod>2013-03-30T20:02:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2012/12/20/new-blog-using-octopress/</loc>
-    <lastmod>2012-12-20T22:54:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/2012/12/17/hello_octopress/</loc>
-    <lastmod>2012-12-17T00:38:00+09:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  <url>
-    <loc>http://kasacchiful.github.com/blog/archives/</loc>
-    <lastmod>2015-03-20T23:43:30+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://kasacchiful.github.com/</loc>
-    <lastmod>2015-03-20T23:43:30+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  
+<url>
+<loc>http://kasacchiful.github.com/blog/2015/01/31/ndsniigata4/</loc>
+<lastmod>2015-01-31T23:45:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2015/01/12/new-year/</loc>
+<lastmod>2015-01-12T21:25:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2014/08/09/nds37/</loc>
+<lastmod>2014-08-09T23:45:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2014/07/21/bingo_sample/</loc>
+<lastmod>2014-07-21T17:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2014/07/13/ndsmeetup1/</loc>
+<lastmod>2014-07-13T22:45:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2014/06/18/chrome_favicon/</loc>
+<lastmod>2014-06-18T22:55:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2014/03/15/nds36/</loc>
+<lastmod>2014-03-15T12:45:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2014/01/18/nds35/</loc>
+<lastmod>2014-01-18T12:45:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2014/01/11/postgres_vacuum/</loc>
+<lastmod>2014-01-11T21:22:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2014/01/05/new_year/</loc>
+<lastmod>2014-01-05T22:47:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2013/11/18/nds34/</loc>
+<lastmod>2013-11-18T23:36:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2013/09/29/nds33/</loc>
+<lastmod>2013-09-29T22:36:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2013/09/05/niigatarb3/</loc>
+<lastmod>2013-09-05T20:36:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2013/09/03/crossing/</loc>
+<lastmod>2013-09-03T23:11:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2013/07/06/nds32/</loc>
+<lastmod>2013-07-06T13:36:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2013/04/12/nds31/</loc>
+<lastmod>2013-04-12T16:15:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2013/04/02/niigata-ll/</loc>
+<lastmod>2013-04-02T10:32:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2013/03/30/jasst13niigata/</loc>
+<lastmod>2013-03-30T20:02:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2012/12/20/new-blog-using-octopress/</loc>
+<lastmod>2012-12-20T22:54:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/2012/12/17/hello_octopress/</loc>
+<lastmod>2012-12-17T00:38:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/archives/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/sohutoueatesuto/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/jasst/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/mian-qiang-hui/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/niigata-dot-ll/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/powershell/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/nds/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/ruby/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/git/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/niigata-dot-rb/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/scala/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/google-analytics/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/ri-ji/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/postgresql/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/db/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/she-ji/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/puroguramingu/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/apuri/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/html/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/blog/categories/chrome/</loc>
+</url>
+<url>
+<loc>http://kasacchiful.github.com/posts/2/</loc>
+</url>
 </urlset>

@@ -4,7 +4,7 @@
   <title><![CDATA[Kasacchiful's Blog]]></title>
   <link href="http://kasacchiful.github.com/atom.xml" rel="self"/>
   <link href="http://kasacchiful.github.com/"/>
-  <updated>2015-03-20T23:43:30+09:00</updated>
+  <updated>2017-06-21T21:11:11+09:00</updated>
   <id>http://kasacchiful.github.com/</id>
   <author>
     <name><![CDATA[kasacchiful]]></name>
@@ -331,7 +331,7 @@
 </span><span class='line'>  <span class="o">}</span>
 </span><span class='line'><span class="o">}</span>
 </span></code></pre></td></tr></table></div></figure>
-&#8211;>
+-->
 
 
 <h3>ゴルーチンと並行性パターン (@hayajo)</h3>
@@ -638,7 +638,7 @@ LTでも良かったのですが、しゃべってしまいました。</p>
 
 <p>「脆弱性大好き」っておいwですが。</p>
 
-<h2>安全な&#8221;○○でログイン&#8221;の作り方 (@gonchan93)</h2>
+<h2>安全な"○○でログイン"の作り方 (@gonchan93)</h2>
 
 <p>資料は<a href="http://www.slideshare.net/ritou/secure-social-loginatndsniigata1-36922216">こちら</a></p>
 
@@ -768,7 +768,7 @@ Rails2以前では、<code>ActionController::Base.relative_url_root</code>や<co
 <p><a href="http://play.golang.org">Go Playground</a>でブラウザで動作検証可能との事。
 発表中にも、ここに書かれたソースコードの説明等をしていただき、分かりやすかったです。</p>
 
-<p>個人的には、&#8221;C言語を使いやすくした&#8221;印象を持ちました。
+<p>個人的には、"C言語を使いやすくした"印象を持ちました。
 まずは、<a href="http://play.golang.org">Go Playground</a>で、いろいろいじってみようかな。</p>
 
 <h2>サブセッション</h2>
@@ -1246,7 +1246,7 @@ http://ugaya40.net
 <li>調査をしやすくする下地を作るために有効なあの手この手
 
 <ol>
-<li> 数会話
+<li>数会話
 
 <ul>
 <li>具体的な思考の癖がつく</li>
@@ -1254,7 +1254,7 @@ http://ugaya40.net
 <li>時間や労力、予算、進捗といった主観的な状況記述にコンセンサスがとれる</li>
 </ul>
 </li>
-<li> Job Descriptionを書いてみる
+<li>Job Descriptionを書いてみる
 
 <ul>
 <li>「職務記述書」と呼ばれたりする。</li>
@@ -1269,7 +1269,7 @@ http://ugaya40.net
 </li>
 </ul>
 </li>
-<li> Evidence Based Scheduling
+<li>Evidence Based Scheduling
 
 <ul>
 <li>Joel Spolsky氏提唱</li>
@@ -1277,7 +1277,7 @@ http://ugaya40.net
 <li>「Joel on Software」</li>
 </ul>
 </li>
-<li> 「射撃しつつ前進」
+<li>「射撃しつつ前進」
 
 <ul>
 <li>とりあえずやれることをやるだけやってみる！
@@ -1381,7 +1381,7 @@ $DBUSER, $DBNAME, $FILENAME は適宜置き換えてください。</p>
 
 <p>pg_class カタログには、テーブルの他にもインデックスやビューなどを目録にしているそうです。
 relnameがテーブル等の名前、relfilenodeがディスク上のファイル名、
-&ldquo;relpages * ブロックサイズ&#8221;がディスク上のサイズとなります。
+&ldquo;relpages * ブロックサイズ"がディスク上のサイズとなります。
 MB での表記にして、おおよその容量を取得しています。
 （※ <code>8192/(1024*1024) = 8/1024</code> となります。）
 ちなみに、relpages自体は、プランナで使用される単なる推測値のようです。</p>
@@ -2240,7 +2240,7 @@ SourceTreeを使って、GUIで操作しましょうという流れでした。<
 <p>今回のハンズオンでは、GitHub Pages上のファイルを更新して、
 GitとGithubを操作することに。</p>
 
-<p>ちなみに、リポジトリ名を&#8221;(username).github.io&#8221;にすると、Github Pagesを<br/>
+<p>ちなみに、リポジトリ名を"(username).github.io"にすると、Github Pagesを<br/>
 <a href="http://">http://</a>(username).github.io/<br/>
 で公開できます。
 ほかの名前だと、サブフォルダ<br/>
@@ -2554,12 +2554,12 @@ Niigata.LLが始まってもまだできずに、
 
 <p>体調見ながら、少しずつ書いていきます。</p>
 
-<h2>JaSST&#8217;13 Niigata が開催されました</h2>
+<h2>JaSST'13 Niigata が開催されました</h2>
 
 <p>2013年3月15日（金）に、にいがた産業創造機構で
-JaSST&#8217;13 Niigataが開催されました。</p>
+JaSST'13 Niigataが開催されました。</p>
 
-<p><a href="http://www.jasst.jp/symposium/jasst13niigata.html">JaSSTソフトウェアテストシンポジウム-JaSST&#8217;13 Niigata</a></p>
+<p><a href="http://www.jasst.jp/symposium/jasst13niigata.html">JaSSTソフトウェアテストシンポジウム-JaSST'13 Niigata</a></p>
 
 <!-- more -->
 
@@ -2571,14 +2571,14 @@ JaSST&#8217;13 Niigataが開催されました。</p>
 講演内容は実行委員長のコラムをご覧ください。
 （ちょっと投げやりな感じですが、ご了承ください）</p>
 
-<p><a href="http://el.jibun.atmarkit.co.jp/obbligato/2013/03/jasst13-niigata-34c4.html">オブリガート ～感謝されるテストエンジニアになる～: ソフトウェアテストシンポジウム「JaSST&#8217;13 Niigata」開催レポート（その1）――テストを難しくさせているもの</a></p>
+<p><a href="http://el.jibun.atmarkit.co.jp/obbligato/2013/03/jasst13-niigata-34c4.html">オブリガート ～感謝されるテストエンジニアになる～: ソフトウェアテストシンポジウム「JaSST'13 Niigata」開催レポート（その1）――テストを難しくさせているもの</a></p>
 
 <p>講演内容が丁寧に書かれているので、
 非常に読みやすいと思います。</p>
 
 <h2>JaSSTを開催して思った事</h2>
 
-<p>実は、1月のJaSST&#8217;13 Tokyoにも参加しました。
+<p>実は、1月のJaSST'13 Tokyoにも参加しました。
 新潟と開催規模が全然違うので単純に比較できませんが、
 東京でも新潟でもソフトウェアテストでかなりの人が集まるわけです。</p>
 
@@ -2593,7 +2593,7 @@ JaSST&#8217;13 Niigataが開催されました。</p>
 
 <p>そして、ソフトウェアの品質向上には無くてはならないものでもあります。</p>
 
-<p>今回のJaSST&#8217;13 Niigataでは、
+<p>今回のJaSST'13 Niigataでは、
 上流から始めるテスト開発というテーマで
 初めての実行委員として運営に携わりました。</p>
 
