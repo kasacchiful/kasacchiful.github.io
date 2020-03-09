@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>プログラミング on kasacchiful&#39;s blog</title>
+    <link>https://kasacchiful.github.io/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</link>
+    <description>Recent content in プログラミング on kasacchiful&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 31 Jan 2015 23:45:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kasacchiful.github.io/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NDS meetup in Niigata #4 に参加しました</title>
+      <link>https://kasacchiful.github.io/blog/2015/01/31/ndsniigata4/</link>
+      <pubDate>Sat, 31 Jan 2015 23:45:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2015/01/31/ndsniigata4/</guid>
+      <description>&lt;p&gt;NDS meetup in Niigata #4 に参加しました。&lt;/p&gt;
+&lt;p&gt;久々に勉強会に出ます。
+最近仕事の都合でなかなか出る機会が無かったので、
+今回は、ゆっくりじっくり話を聞くスタンスで。
+でも、あまりメモ取っていなかったので、うろ覚えで書きます。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS37に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2014/08/09/nds37/</link>
+      <pubDate>Sat, 09 Aug 2014 23:45:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2014/08/09/nds37/</guid>
+      <description>&lt;p&gt;第37回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no37&#34;&gt;第37回勉強会(2014/08/09) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは、「並列・並行処理」。
+前回同様、いろんな言語たちの「並列・並行処理」が集まりました。
+並行処理にあまり詳しくない私にも、わかりやすい内容でした。
+簡単にまとめてみます。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS meetup in Niigataに参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2014/07/13/ndsmeetup1/</link>
+      <pubDate>Sun, 13 Jul 2014 22:45:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2014/07/13/ndsmeetup1/</guid>
+      <description>&lt;p&gt;第1回NDS in Niigataに参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/nino1&#34;&gt;第1回 新潟出張版(2013/07/13) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;
+&lt;a href=&#34;http://connpass.com/event/7331/&#34;&gt;NDS in Niigata #1 - connpass&lt;/a&gt;
+&lt;a href=&#34;https://github.com/NagaokaDevelopersStudy/Studies/blob/master/NDSMeetUp%231.md&#34;&gt;Studies/NDSMeetUp#1.md at master · NagaokaDevelopersStudy/Studies · GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NDSは普段新潟県長岡市で開催されるんですけど、
+今回は新潟出張版として、第1回が新潟市で開催されました。
+今回のテーマは、自由ということでいろんな内容がありました。
+自分も発表しています。&lt;/p&gt;
+&lt;p&gt;今回の初開催でいろいろ準備なされた主催者の@npoiさんと@dictavさんに感謝です。
+おつかれさまでした。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS36に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2014/03/15/nds36/</link>
+      <pubDate>Sat, 15 Mar 2014 12:45:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2014/03/15/nds36/</guid>
+      <description>&lt;p&gt;第36回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no36&#34;&gt;第36回勉強会(2013/03/15) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは、「Go言語といろいろな言語たち」。
+ボリュームが多すぎて、まとめきれません。すみません。
+勉強会も終了時間ぎりぎりで終了となりました。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

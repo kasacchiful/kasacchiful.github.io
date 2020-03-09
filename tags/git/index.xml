@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on kasacchiful&#39;s blog</title>
+    <link>https://kasacchiful.github.io/tags/git/</link>
+    <description>Recent content in git on kasacchiful&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 06 Jul 2013 13:36:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kasacchiful.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NDS32に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2013/07/06/nds32/</link>
+      <pubDate>Sat, 06 Jul 2013 13:36:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/07/06/nds32/</guid>
+      <description>&lt;p&gt;仕事が忙しくなる中、MacBook Pro (Mid 2009) から MacBook Air (Mid 2013) に買い替えて、初更新。&lt;/p&gt;
+&lt;p&gt;さて、第32回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no32&#34;&gt;第32回勉強会(2013/07/06) Githubハンズオン - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは、「やさしいGithubハンズオン」。
+Github Pages 使っていますが、Githubそんなに使いこなしていないので、改めてお勉強です。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

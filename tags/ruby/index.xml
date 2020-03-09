@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ruby on kasacchiful&#39;s blog</title>
+    <link>https://kasacchiful.github.io/tags/ruby/</link>
+    <description>Recent content in ruby on kasacchiful&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 05 Sep 2013 20:36:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kasacchiful.github.io/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Niigata.rb#3に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2013/09/05/niigatarb3/</link>
+      <pubDate>Thu, 05 Sep 2013 20:36:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/09/05/niigatarb3/</guid>
+      <description>&lt;p&gt;Niigata.rb#3に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://connpass.com/event/2589/&#34;&gt;Niigata.rb - connpass&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;場所は新潟市立中央図書館（ほんぽーと）。
+時折勉強するために利用しています。
+研修室や講演ホールもあったりします。&lt;/p&gt;
+&lt;p&gt;私は「初心者向けrubyの実行環境構築」について発表しました。&lt;/p&gt;
+&lt;p&gt;主催の @dictav さんはじめ、
+みなさん凄かったですよ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>クロッシング問題を解いてみた</title>
+      <link>https://kasacchiful.github.io/blog/2013/09/03/crossing/</link>
+      <pubDate>Tue, 03 Sep 2013 23:11:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/09/03/crossing/</guid>
+      <description>&lt;p&gt;CodeIQにあったクロッシング問題。&lt;/p&gt;
+&lt;p&gt;この前のNiigata.rbの懇親会でも話題になったので、
+このためにCodeIQのアカウント作ってやってみたら、
+もう締めきりになっていたので、
+個人的にやってみました。&lt;/p&gt;
+&lt;p&gt;元ネタは&lt;a href=&#34;https://codeiq.jp/ace/yuki_hiroshi/q432&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS31に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2013/04/12/nds31/</link>
+      <pubDate>Fri, 12 Apr 2013 16:15:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/04/12/nds31/</guid>
+      <description>&lt;p&gt;第31回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no31&#34;&gt;第31回勉強会(2013/04/06) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは「はじめての～」ということで、
+春に入学や入社した方に対しての内容が集まりました。
+とはいえ、参加者のほとんどが（私を含め）どうみてもベテランな雰囲気の方ばかり。
+それでも発表内容はとても面白かったです。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

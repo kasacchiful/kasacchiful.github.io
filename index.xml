@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kasacchiful&#39;s blog</title>
+    <link>https://kasacchiful.github.io/</link>
+    <description>Recent content on kasacchiful&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 09 Mar 2020 20:05:34 +0900</lastBuildDate>
+    
+	<atom:link href="https://kasacchiful.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OctopressからHugoに移行した</title>
+      <link>https://kasacchiful.github.io/blog/2020/03/09/migrate-to-hugo/</link>
+      <pubDate>Mon, 09 Mar 2020 20:05:34 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2020/03/09/migrate-to-hugo/</guid>
+      <description>&lt;p&gt;OctopressからHugoに移行したメモです。&lt;/p&gt;
+&lt;p&gt;最近(というか約5年もの間)ブログ書いてないので、
+久しぶりに落ち着いてきたからブログをつらつら書いていこうかなと思ったけど、
+Octopressの更新が2016年から全然進んでないようなので、
+別のものに移行しようと思い立ちました。&lt;/p&gt;
+&lt;p&gt;以前からHugoが気になっていたし、
+OctopressからHugoへの移行に関する記事はたくさんあるので、
+それを参考にしながら
+自分でもようやく移行に踏み切りました。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS meetup in Niigata #4 に参加しました</title>
+      <link>https://kasacchiful.github.io/blog/2015/01/31/ndsniigata4/</link>
+      <pubDate>Sat, 31 Jan 2015 23:45:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2015/01/31/ndsniigata4/</guid>
+      <description>&lt;p&gt;NDS meetup in Niigata #4 に参加しました。&lt;/p&gt;
+&lt;p&gt;久々に勉強会に出ます。
+最近仕事の都合でなかなか出る機会が無かったので、
+今回は、ゆっくりじっくり話を聞くスタンスで。
+でも、あまりメモ取っていなかったので、うろ覚えで書きます。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2015年</title>
+      <link>https://kasacchiful.github.io/blog/2015/01/12/new-year/</link>
+      <pubDate>Mon, 12 Jan 2015 21:25:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2015/01/12/new-year/</guid>
+      <description>&lt;p&gt;あけましておめでとうございます。
+昨年後半から仕事でバタバタしていて、全然更新していませんでした。
+今年も年初からバタバタしています。&lt;/p&gt;
+&lt;p&gt;今年の目標としては、以下の4つ。
+でも、結構規模が大きい感じがするので、4月になったら見直すつもり。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS37に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2014/08/09/nds37/</link>
+      <pubDate>Sat, 09 Aug 2014 23:45:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2014/08/09/nds37/</guid>
+      <description>&lt;p&gt;第37回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no37&#34;&gt;第37回勉強会(2014/08/09) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは、「並列・並行処理」。
+前回同様、いろんな言語たちの「並列・並行処理」が集まりました。
+並行処理にあまり詳しくない私にも、わかりやすい内容でした。
+簡単にまとめてみます。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2年前に作ったものを今更ながら公開しました</title>
+      <link>https://kasacchiful.github.io/blog/2014/07/21/bingo_sample/</link>
+      <pubDate>Mon, 21 Jul 2014 17:00:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2014/07/21/bingo_sample/</guid>
+      <description>&lt;p&gt;先日のNDS#36のLTでしゃべった内容について、
+ようやくGitHubにアップしましたので、説明します。
+かなり期間が空いてしまったのは、反省点。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS meetup in Niigataに参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2014/07/13/ndsmeetup1/</link>
+      <pubDate>Sun, 13 Jul 2014 22:45:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2014/07/13/ndsmeetup1/</guid>
+      <description>&lt;p&gt;第1回NDS in Niigataに参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/nino1&#34;&gt;第1回 新潟出張版(2013/07/13) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;
+&lt;a href=&#34;http://connpass.com/event/7331/&#34;&gt;NDS in Niigata #1 - connpass&lt;/a&gt;
+&lt;a href=&#34;https://github.com/NagaokaDevelopersStudy/Studies/blob/master/NDSMeetUp%231.md&#34;&gt;Studies/NDSMeetUp#1.md at master · NagaokaDevelopersStudy/Studies · GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NDSは普段新潟県長岡市で開催されるんですけど、
+今回は新潟出張版として、第1回が新潟市で開催されました。
+今回のテーマは、自由ということでいろんな内容がありました。
+自分も発表しています。&lt;/p&gt;
+&lt;p&gt;今回の初開催でいろいろ準備なされた主催者の@npoiさんと@dictavさんに感謝です。
+おつかれさまでした。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ChromeでURLルートディレクトリにfavicon.icoが無いとセッション切れする</title>
+      <link>https://kasacchiful.github.io/blog/2014/06/18/chrome_favicon/</link>
+      <pubDate>Wed, 18 Jun 2014 22:55:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2014/06/18/chrome_favicon/</guid>
+      <description>&lt;p&gt;タイトルの件が発生したので、メモ。&lt;/p&gt;
+&lt;h2 id=&#34;chromeでセッション切れ発生&#34;&gt;Chromeでセッション切れ発生&lt;/h2&gt;
+&lt;p&gt;とあるWebシステムで、Chromeでアクセスした際に、ログイン後の画面から別の画面へのリンクをクリックすると、ログイン画面に戻される。
+再ログインした後の画面から別の画面へのリンクをクリックすると、またログイン画面に戻される。&lt;/p&gt;
+&lt;p&gt;開発環境では発生せず、ステージング環境で発生してしまう。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS36に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2014/03/15/nds36/</link>
+      <pubDate>Sat, 15 Mar 2014 12:45:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2014/03/15/nds36/</guid>
+      <description>&lt;p&gt;第36回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no36&#34;&gt;第36回勉強会(2013/03/15) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは、「Go言語といろいろな言語たち」。
+ボリュームが多すぎて、まとめきれません。すみません。
+勉強会も終了時間ぎりぎりで終了となりました。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS35に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2014/01/18/nds35/</link>
+      <pubDate>Sat, 18 Jan 2014 12:45:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2014/01/18/nds35/</guid>
+      <description>&lt;p&gt;第35回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no35&#34;&gt;第35回勉強会(2013/01/18) &amp;amp; 新潟開発者新年会(NDS) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは、「設計（≒デザイン）の話をしよう」。
+ゲストスピーカー3本とLTの構成になっております。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL Vacuum について</title>
+      <link>https://kasacchiful.github.io/blog/2014/01/11/postgres_vacuum/</link>
+      <pubDate>Sat, 11 Jan 2014 21:22:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2014/01/11/postgres_vacuum/</guid>
+      <description>&lt;p&gt;とあるシステムの障害に巻き込まれてしまって、
+いろいろ対応したので、メモします。&lt;/p&gt;
+&lt;p&gt;簡単にいうと、PostgreSQLのデータ空き容量の確保についてのメモです。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2014年に向けて</title>
+      <link>https://kasacchiful.github.io/blog/2014/01/05/new_year/</link>
+      <pubDate>Sun, 05 Jan 2014 22:47:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2014/01/05/new_year/</guid>
+      <description>あけましておめでとうございます。 昨年末から「風邪をひく」「左足小指が腫れて歩くと痛い」という症状があり、 久々のお休みにも関わらず、有意義なお</description>
+    </item>
+    
+    <item>
+      <title>NDS34に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2013/11/18/nds34/</link>
+      <pubDate>Mon, 18 Nov 2013 23:36:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/11/18/nds34/</guid>
+      <description>&lt;p&gt;第34回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no34&#34;&gt;第34回勉強会(2013/11/16) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは、「Google Analytics 基礎講座」。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS33に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2013/09/29/nds33/</link>
+      <pubDate>Sun, 29 Sep 2013 22:36:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/09/29/nds33/</guid>
+      <description>&lt;p&gt;第33回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no33&#34;&gt;第33回勉強会(2013/09/28) Scala入学式 - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは、「Scala入学式」。
+Scalaは、結構前にコップ本買ったけど手つかずだった言語。
+気になっていた存在でした。
+半日がっつり勉強です。&lt;/p&gt;
+&lt;p&gt;ちなみに、前日27日には「&lt;a href=&#34;http://connpass.com/event/3568/&#34;&gt;Scala入学試験&lt;/a&gt;」なるものも開催されていたらしい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Niigata.rb#3に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2013/09/05/niigatarb3/</link>
+      <pubDate>Thu, 05 Sep 2013 20:36:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/09/05/niigatarb3/</guid>
+      <description>&lt;p&gt;Niigata.rb#3に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://connpass.com/event/2589/&#34;&gt;Niigata.rb - connpass&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;場所は新潟市立中央図書館（ほんぽーと）。
+時折勉強するために利用しています。
+研修室や講演ホールもあったりします。&lt;/p&gt;
+&lt;p&gt;私は「初心者向けrubyの実行環境構築」について発表しました。&lt;/p&gt;
+&lt;p&gt;主催の @dictav さんはじめ、
+みなさん凄かったですよ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>クロッシング問題を解いてみた</title>
+      <link>https://kasacchiful.github.io/blog/2013/09/03/crossing/</link>
+      <pubDate>Tue, 03 Sep 2013 23:11:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/09/03/crossing/</guid>
+      <description>&lt;p&gt;CodeIQにあったクロッシング問題。&lt;/p&gt;
+&lt;p&gt;この前のNiigata.rbの懇親会でも話題になったので、
+このためにCodeIQのアカウント作ってやってみたら、
+もう締めきりになっていたので、
+個人的にやってみました。&lt;/p&gt;
+&lt;p&gt;元ネタは&lt;a href=&#34;https://codeiq.jp/ace/yuki_hiroshi/q432&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS32に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2013/07/06/nds32/</link>
+      <pubDate>Sat, 06 Jul 2013 13:36:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/07/06/nds32/</guid>
+      <description>&lt;p&gt;仕事が忙しくなる中、MacBook Pro (Mid 2009) から MacBook Air (Mid 2013) に買い替えて、初更新。&lt;/p&gt;
+&lt;p&gt;さて、第32回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no32&#34;&gt;第32回勉強会(2013/07/06) Githubハンズオン - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは、「やさしいGithubハンズオン」。
+Github Pages 使っていますが、Githubそんなに使いこなしていないので、改めてお勉強です。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NDS31に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2013/04/12/nds31/</link>
+      <pubDate>Fri, 12 Apr 2013 16:15:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/04/12/nds31/</guid>
+      <description>&lt;p&gt;第31回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no31&#34;&gt;第31回勉強会(2013/04/06) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは「はじめての～」ということで、
+春に入学や入社した方に対しての内容が集まりました。
+とはいえ、参加者のほとんどが（私を含め）どうみてもベテランな雰囲気の方ばかり。
+それでも発表内容はとても面白かったです。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Niigata.LLに参加しました</title>
+      <link>https://kasacchiful.github.io/blog/2013/04/02/niigata-ll/</link>
+      <pubDate>Tue, 02 Apr 2013 10:32:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/04/02/niigata-ll/</guid>
+      <description>&lt;p&gt;2013年3月23日（土）に長岡のまちなかキャンパスで、
+Niigata.LLが開催されました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.dictav.info/NiigataLL/&#34;&gt;NiigataLL by dictav&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;私の発表&#34;&gt;私の発表&lt;/h2&gt;
+&lt;p&gt;私は、PowerShellについてしゃべりました。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JaSST&#39;13 Niigataが開催されました</title>
+      <link>https://kasacchiful.github.io/blog/2013/03/30/jasst13niigata/</link>
+      <pubDate>Sat, 30 Mar 2013 20:02:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/03/30/jasst13niigata/</guid>
+      <description>&lt;p&gt;最近体調が悪くて、なかなか文章書ける状態ではなく、
+新年迎えるにあたって始めたこのブログも、
+気づけばすでに3月まで何も書かないという、
+なんとも体たらくな感じですが、よろしくお願いします。&lt;/p&gt;
+&lt;p&gt;体調見ながら、少しずつ書いていきます。&lt;/p&gt;
+&lt;h2 id=&#34;jasst13-niigata-が開催されました&#34;&gt;JaSST&amp;rsquo;13 Niigata が開催されました&lt;/h2&gt;
+&lt;p&gt;2013年3月15日（金）に、にいがた産業創造機構で
+JaSST&amp;rsquo;13 Niigataが開催されました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jasst.jp/symposium/jasst13niigata.html&#34;&gt;JaSSTソフトウェアテストシンポジウム-JaSST&amp;rsquo;13 Niigata&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Octopressを使ってブログを書いてみた</title>
+      <link>https://kasacchiful.github.io/blog/2012/10/12/new-blog-using-octopress/</link>
+      <pubDate>Fri, 12 Oct 2012 22:54:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2012/10/12/new-blog-using-octopress/</guid>
+      <description>&lt;p&gt;前も書いたけど、新しい年を迎えるにあたって何か新しい事を始めたかったのです。
+そんなとき、Octopressで技術系ブログを書き始めることを思い立ちました。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>最初のOctopress</title>
+      <link>https://kasacchiful.github.io/blog/2012/10/12/hello_octopress/</link>
+      <pubDate>Fri, 12 Oct 2012 00:38:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2012/10/12/hello_octopress/</guid>
+      <description>もうすぐ新しい年になるので何か新しい事でも始めようかと思ったところ、そういえば技術系のブログを書いた事が無かったので、せっかくなので少しずつ</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kasacchiful.github.io/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kasacchiful.github.io/archives/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

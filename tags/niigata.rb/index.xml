@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Niigata.rb on kasacchiful&#39;s blog</title>
+    <link>https://kasacchiful.github.io/tags/niigata.rb/</link>
+    <description>Recent content in Niigata.rb on kasacchiful&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 05 Sep 2013 20:36:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kasacchiful.github.io/tags/niigata.rb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Niigata.rb#3に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2013/09/05/niigatarb3/</link>
+      <pubDate>Thu, 05 Sep 2013 20:36:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/09/05/niigatarb3/</guid>
+      <description>&lt;p&gt;Niigata.rb#3に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://connpass.com/event/2589/&#34;&gt;Niigata.rb - connpass&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;場所は新潟市立中央図書館（ほんぽーと）。
+時折勉強するために利用しています。
+研修室や講演ホールもあったりします。&lt;/p&gt;
+&lt;p&gt;私は「初心者向けrubyの実行環境構築」について発表しました。&lt;/p&gt;
+&lt;p&gt;主催の @dictav さんはじめ、
+みなさん凄かったですよ。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

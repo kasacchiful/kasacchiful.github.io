@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scala on kasacchiful&#39;s blog</title>
+    <link>https://kasacchiful.github.io/tags/scala/</link>
+    <description>Recent content in Scala on kasacchiful&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 29 Sep 2013 22:36:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kasacchiful.github.io/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NDS33に参加しました。</title>
+      <link>https://kasacchiful.github.io/blog/2013/09/29/nds33/</link>
+      <pubDate>Sun, 29 Sep 2013 22:36:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/09/29/nds33/</guid>
+      <description>&lt;p&gt;第33回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no33&#34;&gt;第33回勉強会(2013/09/28) Scala入学式 - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のテーマは、「Scala入学式」。
+Scalaは、結構前にコップ本買ったけど手つかずだった言語。
+気になっていた存在でした。
+半日がっつり勉強です。&lt;/p&gt;
+&lt;p&gt;ちなみに、前日27日には「&lt;a href=&#34;http://connpass.com/event/3568/&#34;&gt;Scala入学試験&lt;/a&gt;」なるものも開催されていたらしい。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

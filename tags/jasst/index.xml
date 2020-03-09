@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JaSST on kasacchiful&#39;s blog</title>
+    <link>https://kasacchiful.github.io/tags/jasst/</link>
+    <description>Recent content in JaSST on kasacchiful&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 30 Mar 2013 20:02:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kasacchiful.github.io/tags/jasst/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JaSST&#39;13 Niigataが開催されました</title>
+      <link>https://kasacchiful.github.io/blog/2013/03/30/jasst13niigata/</link>
+      <pubDate>Sat, 30 Mar 2013 20:02:00 +0900</pubDate>
+      
+      <guid>https://kasacchiful.github.io/blog/2013/03/30/jasst13niigata/</guid>
+      <description>&lt;p&gt;最近体調が悪くて、なかなか文章書ける状態ではなく、
+新年迎えるにあたって始めたこのブログも、
+気づけばすでに3月まで何も書かないという、
+なんとも体たらくな感じですが、よろしくお願いします。&lt;/p&gt;
+&lt;p&gt;体調見ながら、少しずつ書いていきます。&lt;/p&gt;
+&lt;h2 id=&#34;jasst13-niigata-が開催されました&#34;&gt;JaSST&amp;rsquo;13 Niigata が開催されました&lt;/h2&gt;
+&lt;p&gt;2013年3月15日（金）に、にいがた産業創造機構で
+JaSST&amp;rsquo;13 Niigataが開催されました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jasst.jp/symposium/jasst13niigata.html&#34;&gt;JaSSTソフトウェアテストシンポジウム-JaSST&amp;rsquo;13 Niigata&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
