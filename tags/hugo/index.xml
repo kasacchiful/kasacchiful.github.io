@@ -1,32 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Hugo on kasacchiful&#39;s blog</title>
-    <link>https://kasacchiful.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on kasacchiful&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Mon, 09 Mar 2020 20:05:34 +0900</lastBuildDate>
-    
-	<atom:link href="https://kasacchiful.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>OctopressからHugoに移行した</title>
-      <link>https://kasacchiful.github.io/blog/2020/03/09/migrate-to-hugo/</link>
-      <pubDate>Mon, 09 Mar 2020 20:05:34 +0900</pubDate>
-      
-      <guid>https://kasacchiful.github.io/blog/2020/03/09/migrate-to-hugo/</guid>
-      <description>&lt;p&gt;OctopressからHugoに移行したメモです。&lt;/p&gt;
-&lt;p&gt;最近(というか約5年もの間)ブログ書いてないので、
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on kasacchiful's blog</title><link>https://kasacchiful.github.io/tags/hugo/</link><description>Recent content in Hugo on kasacchiful's blog</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 09 Mar 2020 20:05:34 +0900</lastBuildDate><atom:link href="https://kasacchiful.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>OctopressからHugoに移行した</title><link>https://kasacchiful.github.io/blog/2020/03/09/migrate-to-hugo/</link><pubDate>Mon, 09 Mar 2020 20:05:34 +0900</pubDate><guid>https://kasacchiful.github.io/blog/2020/03/09/migrate-to-hugo/</guid><description>&lt;p>OctopressからHugoに移行したメモです。&lt;/p>
+&lt;p>最近(というか約5年もの間)ブログ書いてないので、
 久しぶりに落ち着いてきたからブログをつらつら書いていこうかなと思ったけど、
 Octopressの更新が2016年から全然進んでないようなので、
-別のものに移行しようと思い立ちました。&lt;/p&gt;
-&lt;p&gt;以前からHugoが気になっていたし、
+別のものに移行しようと思い立ちました。&lt;/p>
+&lt;p>以前からHugoが気になっていたし、
 OctopressからHugoへの移行に関する記事はたくさんあるので、
 それを参考にしながら
-自分でもようやく移行に踏み切りました。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+自分でもようやく移行に踏み切りました。&lt;/p></description></item></channel></rss>

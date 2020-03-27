@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Google Analytics on kasacchiful&#39;s blog</title>
-    <link>https://kasacchiful.github.io/tags/google-analytics/</link>
-    <description>Recent content in Google Analytics on kasacchiful&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Mon, 18 Nov 2013 23:36:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://kasacchiful.github.io/tags/google-analytics/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>NDS34に参加しました。</title>
-      <link>https://kasacchiful.github.io/blog/2013/11/18/nds34/</link>
-      <pubDate>Mon, 18 Nov 2013 23:36:00 +0900</pubDate>
-      
-      <guid>https://kasacchiful.github.io/blog/2013/11/18/nds34/</guid>
-      <description>&lt;p&gt;第34回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no34&#34;&gt;第34回勉強会(2013/11/16) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;今回のテーマは、「Google Analytics 基礎講座」。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Google Analytics on kasacchiful's blog</title><link>https://kasacchiful.github.io/tags/google-analytics/</link><description>Recent content in Google Analytics on kasacchiful's blog</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 18 Nov 2013 23:36:00 +0900</lastBuildDate><atom:link href="https://kasacchiful.github.io/tags/google-analytics/index.xml" rel="self" type="application/rss+xml"/><item><title>NDS34に参加しました。</title><link>https://kasacchiful.github.io/blog/2013/11/18/nds34/</link><pubDate>Mon, 18 Nov 2013 23:36:00 +0900</pubDate><guid>https://kasacchiful.github.io/blog/2013/11/18/nds34/</guid><description>&lt;p>第34回NDS（長岡開発者勉強会）に参加しました。&lt;/p>
+&lt;p>&lt;a href="http://nagaoka.techtalk.jp/no34">第34回勉強会(2013/11/16) - 長岡 IT開発者 勉強会(NDS)&lt;/a>&lt;/p>
+&lt;p>今回のテーマは、「Google Analytics 基礎講座」。&lt;/p></description></item></channel></rss>

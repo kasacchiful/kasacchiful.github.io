@@ -1,48 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>日記 on kasacchiful&#39;s blog</title>
-    <link>https://kasacchiful.github.io/tags/%E6%97%A5%E8%A8%98/</link>
-    <description>Recent content in 日記 on kasacchiful&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Mon, 12 Jan 2015 21:25:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://kasacchiful.github.io/tags/%E6%97%A5%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>2015年</title>
-      <link>https://kasacchiful.github.io/blog/2015/01/12/new-year/</link>
-      <pubDate>Mon, 12 Jan 2015 21:25:00 +0900</pubDate>
-      
-      <guid>https://kasacchiful.github.io/blog/2015/01/12/new-year/</guid>
-      <description>&lt;p&gt;あけましておめでとうございます。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>日記 on kasacchiful's blog</title><link>https://kasacchiful.github.io/tags/%E6%97%A5%E8%A8%98/</link><description>Recent content in 日記 on kasacchiful's blog</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 12 Jan 2015 21:25:00 +0900</lastBuildDate><atom:link href="https://kasacchiful.github.io/tags/%E6%97%A5%E8%A8%98/index.xml" rel="self" type="application/rss+xml"/><item><title>2015年</title><link>https://kasacchiful.github.io/blog/2015/01/12/new-year/</link><pubDate>Mon, 12 Jan 2015 21:25:00 +0900</pubDate><guid>https://kasacchiful.github.io/blog/2015/01/12/new-year/</guid><description>&lt;p>あけましておめでとうございます。
 昨年後半から仕事でバタバタしていて、全然更新していませんでした。
-今年も年初からバタバタしています。&lt;/p&gt;
-&lt;p&gt;今年の目標としては、以下の4つ。
-でも、結構規模が大きい感じがするので、4月になったら見直すつもり。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PostgreSQL Vacuum について</title>
-      <link>https://kasacchiful.github.io/blog/2014/01/11/postgres_vacuum/</link>
-      <pubDate>Sat, 11 Jan 2014 21:22:00 +0900</pubDate>
-      
-      <guid>https://kasacchiful.github.io/blog/2014/01/11/postgres_vacuum/</guid>
-      <description>&lt;p&gt;とあるシステムの障害に巻き込まれてしまって、
-いろいろ対応したので、メモします。&lt;/p&gt;
-&lt;p&gt;簡単にいうと、PostgreSQLのデータ空き容量の確保についてのメモです。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2014年に向けて</title>
-      <link>https://kasacchiful.github.io/blog/2014/01/05/new_year/</link>
-      <pubDate>Sun, 05 Jan 2014 22:47:00 +0900</pubDate>
-      
-      <guid>https://kasacchiful.github.io/blog/2014/01/05/new_year/</guid>
-      <description>あけましておめでとうございます。 昨年末から「風邪をひく」「左足小指が腫れて歩くと痛い」という症状があり、 久々のお休みにも関わらず、有意義なお</description>
-    </item>
-    
-  </channel>
-</rss>
+今年も年初からバタバタしています。&lt;/p>
+&lt;p>今年の目標としては、以下の4つ。
+でも、結構規模が大きい感じがするので、4月になったら見直すつもり。&lt;/p></description></item><item><title>PostgreSQL Vacuum について</title><link>https://kasacchiful.github.io/blog/2014/01/11/postgres_vacuum/</link><pubDate>Sat, 11 Jan 2014 21:22:00 +0900</pubDate><guid>https://kasacchiful.github.io/blog/2014/01/11/postgres_vacuum/</guid><description>&lt;p>とあるシステムの障害に巻き込まれてしまって、
+いろいろ対応したので、メモします。&lt;/p>
+&lt;p>簡単にいうと、PostgreSQLのデータ空き容量の確保についてのメモです。&lt;/p></description></item><item><title>2014年に向けて</title><link>https://kasacchiful.github.io/blog/2014/01/05/new_year/</link><pubDate>Sun, 05 Jan 2014 22:47:00 +0900</pubDate><guid>https://kasacchiful.github.io/blog/2014/01/05/new_year/</guid><description>あけましておめでとうございます。 昨年末から「風邪をひく」「左足小指が腫れて歩くと痛い」という症状があり、 久々のお休みにも関わらず、有意義なお</description></item></channel></rss>

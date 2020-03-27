@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>設計 on kasacchiful&#39;s blog</title>
-    <link>https://kasacchiful.github.io/tags/%E8%A8%AD%E8%A8%88/</link>
-    <description>Recent content in 設計 on kasacchiful&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sat, 18 Jan 2014 12:45:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://kasacchiful.github.io/tags/%E8%A8%AD%E8%A8%88/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>NDS35に参加しました。</title>
-      <link>https://kasacchiful.github.io/blog/2014/01/18/nds35/</link>
-      <pubDate>Sat, 18 Jan 2014 12:45:00 +0900</pubDate>
-      
-      <guid>https://kasacchiful.github.io/blog/2014/01/18/nds35/</guid>
-      <description>&lt;p&gt;第35回NDS（長岡開発者勉強会）に参加しました。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://nagaoka.techtalk.jp/no35&#34;&gt;第35回勉強会(2013/01/18) &amp;amp; 新潟開発者新年会(NDS) - 長岡 IT開発者 勉強会(NDS)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;今回のテーマは、「設計（≒デザイン）の話をしよう」。
-ゲストスピーカー3本とLTの構成になっております。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>設計 on kasacchiful's blog</title><link>https://kasacchiful.github.io/tags/%E8%A8%AD%E8%A8%88/</link><description>Recent content in 設計 on kasacchiful's blog</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 18 Jan 2014 12:45:00 +0900</lastBuildDate><atom:link href="https://kasacchiful.github.io/tags/%E8%A8%AD%E8%A8%88/index.xml" rel="self" type="application/rss+xml"/><item><title>NDS35に参加しました。</title><link>https://kasacchiful.github.io/blog/2014/01/18/nds35/</link><pubDate>Sat, 18 Jan 2014 12:45:00 +0900</pubDate><guid>https://kasacchiful.github.io/blog/2014/01/18/nds35/</guid><description>&lt;p>第35回NDS（長岡開発者勉強会）に参加しました。&lt;/p>
+&lt;p>&lt;a href="http://nagaoka.techtalk.jp/no35">第35回勉強会(2013/01/18) &amp;amp; 新潟開発者新年会(NDS) - 長岡 IT開発者 勉強会(NDS)&lt;/a>&lt;/p>
+&lt;p>今回のテーマは、「設計（≒デザイン）の話をしよう」。
+ゲストスピーカー3本とLTの構成になっております。&lt;/p></description></item></channel></rss>
